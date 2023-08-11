@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>House Marker@3x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-26.1%" y="-26.1%" width="152.2%" height="152.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.280730988 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Food-Discover-(categories-with-listing)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="10.10" transform="translate(-185.000000, -330.000000)">
+            <g id="Map" transform="translate(37.000000, 251.000000)">
+                <g id="Customer's-home" transform="translate(30.000000, 33.000000)">
+                    <g id="House-Marker" filter="url(#filter-1)" transform="translate(121.000000, 47.000000)">
+                        <g id="Group_18953" transform="translate(0.010000, 0.010000)" fill-rule="nonzero">
+                            <circle id="Ellipse_2368" fill="#FFB700" opacity="0.223" cx="22.99" cy="22.99" r="15"></circle>
+                            <circle id="Ellipse_2369" fill="#FFB700" opacity="0.137" cx="22.99" cy="22.99" r="22"></circle>
+                            <circle id="Ellipse_2367" fill-opacity="0.4" fill="#FFB800" opacity="0.997" cx="23.49" cy="23.49" r="6.5"></circle>
+                        </g>
+                        <g id="Home_icon" transform="translate(11.000000, 11.500000)">
+                            <g id="Ellipse_2391-2" transform="translate(0.195000, 0.005000)">
+                                <circle id="Oval" fill="#D63229" fill-rule="nonzero" cx="11.822" cy="11.822" r="11.822"></circle>
+                                <circle id="Oval" stroke="#FFFFFF" stroke-width="2" cx="11.822" cy="11.822" r="10.822"></circle>
+                            </g>
+                            <text id="" fill="#FFFFFF" font-family="FontAwesome" font-size="11" font-weight="normal">
+                                <tspan x="7" y="15"></tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

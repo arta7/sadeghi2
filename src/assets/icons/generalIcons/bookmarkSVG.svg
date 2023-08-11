@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="17px" viewBox="0 0 13 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Advertise badge@3x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Stores" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="11.3" transform="translate(-36.000000, -341.000000)">
+            <g id="Browse-by-Foods" transform="translate(36.000000, 336.000000)">
+                <g id="Free-Chuncho">
+                    <g id="Advertise-badge" transform="translate(0.000000, 5.000000)">
+                        <path d="M0,0 L13,0 L13,16.5067939 C13,16.6724793 12.8656854,16.8067939 12.7,16.8067939 C12.6415128,16.8067939 12.5843012,16.7896976 12.5354031,16.7576083 L6.66459693,12.9048917 C6.56466423,12.8393109 6.43533577,12.8393109 6.33540307,12.9048917 L0.464596932,16.7576083 C0.326075979,16.8485126 0.140090002,16.8099118 0.0491856267,16.6713908 C0.0170962579,16.6224927 -2.87941725e-15,16.5652811 0,16.5067939 L0,0 L0,0 Z" id="Rectangle" fill="#FFB800"></path>
+                        <text id="A" font-family="RobotoCondensed-Light, Roboto Condensed" font-size="10"  font-weight="300" fill="#FFFFFF">
+                            <tspan x="3.75830078" y="9.5">A</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

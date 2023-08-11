@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>th_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,0 L2,0 L2,2 L0,2 L0,0 Z M4,0 L6,0 L6,2 L4,2 L4,0 Z M8,0 L10,0 L10,2 L8,2 L8,0 Z M0,4 L2,4 L2,6 L0,6 L0,4 Z M4,4 L6,4 L6,6 L4,6 L4,4 Z M8,4 L10,4 L10,6 L8,6 L8,4 Z M0,8 L2,8 L2,10 L0,10 L0,8 Z M4,8 L6,8 L6,10 L4,10 L4,8 Z M8,8 L10,8 L10,10 L8,10 L8,8 Z" id="path-1"></path>
+        <polygon id="path-3" points="0 16 16 16 16 0 0 0"></polygon>
+    </defs>
+    <g id="Food-Discover-(categories-with-listing)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="10.4.1" transform="translate(-106.000000, -358.000000)">
+            <g id="Price-order-/-list-setting" transform="translate(35.000000, 353.000000)">
+                <g id="th_icon" transform="translate(71.000000, 5.000000)">
+                    <g id="Group_13826-Clipped">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Path_19145"></g>
+                        <g id="Group_13826" mask="url(#mask-2)">
+                            <g transform="translate(-2.666667, -2.666667)" id="Group_13825-Clipped">
+                                <g>
+                                    <mask id="mask-4" fill="white">
+                                        <use xlink:href="#path-3"></use>
+                                    </mask>
+                                    <g id="Path_19141"></g>
+                                    <g id="Group_13825" mask="url(#mask-4)" fill="#000000" fill-rule="nonzero">
+                                        <g transform="translate(-0.666667, -0.666667)" id="Path_19143">
+                                            <polygon points="0 0 16.6666667 0 16.6666667 16.6666667 0 16.6666667"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

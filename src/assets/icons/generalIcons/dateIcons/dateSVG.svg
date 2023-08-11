@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="9px" viewBox="0 0 8 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>ic_chat_calendar@3x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="messanger-/-do-not-need" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Chat-with-shipper" transform="translate(-208.000000, -287.000000)" fill="#AAAAAA">
+            <g id="Shipper-message" transform="translate(37.000000, 267.000000)">
+                <g id="Date" transform="translate(137.000000, 18.000000)">
+                    <g id="ic_chat_calendar" transform="translate(34.000000, 2.000000)">
+                        <path d="M0.84,7.548 L6.71,7.548 L6.71,1.678 L0.84,1.678 L0.84,7.548 Z M7.5500006,0.839 L7.5500006,7.55 C7.55026648,7.77224117 7.46203099,7.98544197 7.30478884,8.14249648 C7.1475467,8.29955098 6.9342407,8.38753184 6.712,8.3870024 L0.84,8.3870024 C0.617840587,8.38726542 0.404689369,8.29919894 0.247505072,8.14220221 C0.0903207748,7.98520548 0.002,7.77215957 0.002,7.55 L0.002,0.839 L1.261,0.839 L1.261,0 L2.1,0 L2.1,0.839 L5.454,0.839 L5.454,0 L6.293,0 L6.293,0.839 L7.5500006,0.839 Z M1.679,4.193 L2.518,4.193 L2.518,5.032 L1.679,5.032 L1.679,4.193 Z M3.356,4.193 L4.195,4.193 L4.195,5.032 L3.356,5.032 L3.356,4.193 Z M5.033,4.193 L5.872,4.193 L5.872,5.032 L5.033,5.032 L5.033,4.193 Z M1.679,5.87 L2.518,5.87 L2.518,6.709 L1.679,6.709 L1.679,5.87 Z M3.356,5.87 L4.195,5.87 L4.195,6.709 L3.356,6.709 L3.356,5.87 Z M5.033,5.87 L5.872,5.87 L5.872,6.709 L5.033,6.709 L5.033,5.87 Z" id="Path_11336"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

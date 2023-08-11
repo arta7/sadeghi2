@@ -1,0 +1,19 @@
+{
+  "name": "navar",
+  "version": "1.0.0",
+  "description": "server",
+  "main": "(index.js)",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "bizhan shabani",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mariadb": "^3.2.0",
+    "mssql": "^9.0.1",
+    "mysql": "^2.18.1",
+    "twilio": "^3.83.1"
+  }
+}

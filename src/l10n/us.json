@@ -1,0 +1,14 @@
+{
+      "Login": "Log In",
+      "Usernames":"Username",
+      "Password":"Password",
+      "Remember":"Remember me",
+      "Restore":"Restore password",
+      "Account":"Don't have an account?",
+      "Create":"Create an account",
+  
+  
+  "help": "Do you need some help about {{ topic }}?",
+  "question": "Which is your favorite cat?"
+
+}

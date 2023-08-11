@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="5px" height="10px" viewBox="0 0 5 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Price low to high@3x</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Share-&amp;-Earn" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="7.0" transform="translate(-324.000000, -482.000000)">
+            <g id="Table" transform="translate(35.000000, 479.000000)">
+                <g id="Price-low-to-high" transform="translate(256.000000, 1.000000)" filter="url(#filter-1)">
+                    <g transform="translate(35.500000, 7.000000) scale(1, -1) translate(-35.500000, -7.000000) translate(33.000000, 2.000000)" id="Group" fill="#000000" fill-rule="nonzero">
+                        <g id="Path">
+                            <path d="M3.4009009,7.00761161 L3.4009009,0.267857143 C3.4009009,0.119933036 3.27988739,0 3.13063063,0 L1.86936937,0 C1.72011261,0 1.5990991,0.119933036 1.5990991,0.267857143 L1.5990991,7.00761161 L0.561734234,7.00761161 C0.0801576577,7.00761161 -0.161013514,7.58464286 0.179504505,7.92214286 L2.11777027,9.84310268 C2.32887387,10.0523214 2.67112613,10.0523214 2.88220721,9.84310268 L4.82047297,7.92214286 C5.16099099,7.58466518 4.91981982,7.00761161 4.43824324,7.00761161 L3.4009009,7.00761161 Z"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

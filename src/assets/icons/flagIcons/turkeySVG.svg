@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>turkay flag</title>
+    <defs>
+        <circle id="path-1" cx="16.5" cy="16.5" r="16.5"></circle>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.3" transform="translate(-36.000000, -312.000000)">
+            <g id="Content" transform="translate(36.000000, 123.000000)">
+                <g id="Turkay" transform="translate(0.000000, 189.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(-3.000000, -1.000000)" id="turkay-flag">
+                            <polygon id="Fill-1" fill="#D8091E" points="-9.67985756e-15 33.6787 46.6996087 33.6787 46.6996087 9.66338121e-15 -9.67985756e-15 9.66338121e-15"></polygon>
+                            <g id="Group-6" transform="translate(7.833333, 7.838700)" fill="#E5E5E5">
+                                <path d="M8.21270507,15.136222 C4.38288623,13.167282 4.38288623,9.000582 4.38288623,9.000582 C4.38288623,9.000582 4.38288623,4.833882 8.21270507,2.864942 C12.9821833,0.413202 16.8355022,4.330342 16.8355022,4.330342 C16.8355022,4.330342 12.4018355,-2.097018 5.11683551,1.262182 C0.599386232,3.345702 0.255060145,7.346482 0.255060145,9.000582 C0.255060145,10.654682 0.599386232,14.655462 5.11683551,16.738642 C12.4018355,20.098182 16.8355022,13.670822 16.8355022,13.670822 C16.8355022,13.670822 12.9821833,17.587962 8.21270507,15.136222" id="Fill-2"></path>
+                                <polygon id="Fill-4" points="19.3008225 5.013912 21.296279 7.645512 24.3826123 6.460952 22.4920543 9.169052 24.5740181 11.732992 21.4100326 10.774872 19.61075 13.544172 19.5456993 10.244132 16.3517428 9.391412 19.4755399 8.309872"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

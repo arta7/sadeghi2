@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="16px" viewBox="0 0 17 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Plus</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="9 0 9 7 16 7 16 9 9 9 9 16 7 16 7 9 0 9 0 7 7 7 7 0"></polygon>
+        <polygon id="path-3" points="0 24 24 24 24 0 0 0"></polygon>
+    </defs>
+    <g id="Support" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="6.2" transform="translate(-292.000000, -336.000000)">
+            <g id="content" transform="translate(37.000000, 312.000000)">
+                <g id="1" transform="translate(1.000000, 20.000000)">
+                    <g id="Plus" transform="translate(254.500000, 4.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Path_19440"></g>
+                        <g mask="url(#mask-2)" id="Group_14056-Clipped">
+                            <g>
+                                <mask id="mask-4" fill="white">
+                                    <use xlink:href="#path-3"></use>
+                                </mask>
+                                <g id="Path_19439"></g>
+                                <g id="Group_14056" mask="url(#mask-4)" fill="#000000" fill-rule="nonzero">
+                                    <g transform="translate(-5.000000, -5.000000)" id="Path_19438">
+                                        <polygon points="0 0 26 0 26 26 0 26"></polygon>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

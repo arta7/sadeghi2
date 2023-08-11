@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>close copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11,3.66666667 C11.578584,3.66666667 12.047619,4.13570169 12.047619,4.71428571 L12.0466667,9.95166667 L17.2857143,9.95238095 C17.8642983,9.95238095 18.3333333,10.421416 18.3333333,11 C18.3333333,11.578584 17.8642983,12.047619 17.2857143,12.047619 L12.0466667,12.0466667 L12.047619,17.2857143 C12.047619,17.8642983 11.578584,18.3333333 11,18.3333333 C10.421416,18.3333333 9.95238095,17.8642983 9.95238095,17.2857143 L9.95166667,12.0466667 L4.71428571,12.047619 C4.13570169,12.047619 3.66666667,11.578584 3.66666667,11 C3.66666667,10.421416 4.13570169,9.95238095 4.71428571,9.95238095 L9.95166667,9.95166667 L9.95238095,4.71428571 C9.95238095,4.13570169 10.421416,3.66666667 11,3.66666667 Z" id="path-1"></path>
+    </defs>
+    <g id="Stores" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="11.6" transform="translate(-328.000000, -270.000000)">
+            <g id="Browse-by-Foods" transform="translate(36.000000, 265.000000)">
+                <g id="Free-Chuncho">
+                    <g id="close-copy-2" transform="translate(287.000000, 0.000000)">
+                        <circle id="Oval" fill="#FFFFFF" cx="11" cy="11" r="6"></circle>
+                        <g id="2line_close">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="2line" fill="#000000" fill-rule="evenodd" transform="translate(11.000000, 11.000000) rotate(45.000000) translate(-11.000000, -11.000000) " xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

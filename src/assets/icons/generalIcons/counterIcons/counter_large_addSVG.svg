@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="21px" viewBox="0 0 10 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Stores" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="11.4" transform="translate(-309.000000, -444.000000)">
+            <g id="Content" transform="translate(0.000000, 302.000000)">
+                <g id="Price-/-amount" transform="translate(55.000000, 136.000000)">
+                    <g id="counter" transform="translate(220.000000, 6.000000)">
+                        <g id="Group" transform="translate(34.000000, 0.000000)">
+                            <text id="+" fill="#000000" fill-rule="nonzero" font-family="Roboto-Light, Roboto" font-size="16" font-weight="300" line-spacing="21">
+                                <tspan x="0" y="15">+</tspan>
+                            </text>
+                            <rect id="Rectangle" stroke-opacity="0" stroke="#FFFFFF" fill-opacity="0" fill="#FFFFFF" x="0.5" y="0.5" width="9" height="20"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

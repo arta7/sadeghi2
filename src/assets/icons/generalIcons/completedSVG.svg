@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="25px" viewBox="0 0 26 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>success@3x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Order-History" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="5.0" transform="translate(-288.000000, -257.000000)" fill="#60B344">
+            <g id="Orders" transform="translate(36.000000, 213.000000)">
+                <g id="Order-1">
+                    <g id="success" transform="translate(252.500000, 44.000000)">
+                        <g id="checked_2_">
+                            <path d="M12.5,0 C5.59644063,0 0,5.59644063 0,12.5 C0,19.4035594 5.59644063,25 12.5,25 C19.4035594,25 25,19.4035594 25,12.5 C25,9.18479388 23.6830395,6.00536997 21.3388348,3.66116524 C18.99463,1.3169605 15.8152061,0 12.5,0 Z M10.2068182,18.9209091 L4.70318182,13.4172727 L6.53772727,11.5827273 L10.2072727,15.2518182 L18.4627273,6.99636364 L20.2972727,8.83090909 L10.2068182,18.9209091 Z" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

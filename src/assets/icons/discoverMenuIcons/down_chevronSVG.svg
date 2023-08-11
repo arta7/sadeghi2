@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="5px" viewBox="0 0 8 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>current-location drop down arrow@3x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Food-Discover-(categories-with-listing)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="10.0" transform="translate(-230.000000, -64.000000)" fill="#000000" fill-rule="nonzero" stroke="#000000" stroke-width="0.4">
+            <g id="Header" transform="translate(0.000000, -1.000000)">
+                <g id="current-location-drop-down-arrow" transform="translate(231.000000, 66.000000)">
+                    <path d="M5.90262633,0 C5.87709375,0.000460078725 5.8528362,0.0106888796 5.83539348,0.028378069 L2.99252144,2.77737607 L0.166585663,0.0421460055 C0.128133741,0.00688346026 0.0671280468,0.00688346026 0.0286761255,0.0421460055 C0.0103459868,0.0590014273 0,0.082182156 0,0.106396376 C0,0.130610596 0.0103459868,0.153791325 0.0286761255,0.170646747 L2.92235694,2.97242184 C2.94081324,2.99028263 2.96615465,3.0002278 2.99252144,2.99995771 C3.01828692,3.00073922 3.04309388,2.9906561 3.06026648,2.97242184 L5.97330302,0.15687881 C6.00981696,0.119794732 6.00874658,0.0619299439 5.97088356,0.0260834129 C5.95278605,0.00899613174 5.92815891,-0.000404759386 5.90262633,0 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

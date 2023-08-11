@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="11px" viewBox="0 0 11 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>+</title>
+    <g id="Payment-Methods" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="Roboto-Light, Roboto" font-size="25" font-weight="300">
+        <g id="4.4" transform="translate(-307.000000, -525.000000)" fill="#D63229">
+            <g id="Save-&amp;-Add-button" transform="translate(37.000000, 506.000000)">
+                <text id="+" transform="translate(274.500000, 26.500000) rotate(45.000000) translate(-274.500000, -26.500000) ">
+                    <tspan x="267" y="33">+</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

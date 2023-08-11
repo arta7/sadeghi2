@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Rus_flag@3x</title>
+    <defs>
+        <circle id="path-1" cx="16.5" cy="16.5" r="16.5"></circle>
+    </defs>
+    <g id="1.-Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.1-Choose-Language" transform="translate(-27.000000, -186.000000)">
+            <g id="languages" transform="translate(26.000000, 130.000000)">
+                <g id="language-2" transform="translate(0.000000, 56.000000)">
+                    <g id="USA_flag" transform="translate(1.000000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#D8D8D8" xlink:href="#path-1"></use>
+                        <g id="rus_flag" mask="url(#mask-2)" fill-rule="nonzero">
+                            <g transform="translate(-3.000000, 0.000000)">
+                                <rect id="Rectangle_12" fill="#E30613" x="0" y="16.482" width="49.08" height="16.482"></rect>
+                                <rect id="Rectangle_13" fill="#FFFFFF" x="0" y="0" width="49.08" height="16.482"></rect>
+                                <rect id="Rectangle_14" fill="#2D2E83" x="0" y="10.988" width="49.08" height="10.988"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

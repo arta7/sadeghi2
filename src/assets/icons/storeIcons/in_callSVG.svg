@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="89px" height="57px" viewBox="0 0 89 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Call button@3x</title>
+    <g id="Stores" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="11.17" transform="translate(-249.000000, -212.000000)">
+            <g id="Call-button" transform="translate(250.000000, 213.000000)">
+                <rect id="Rectangle" stroke="#00DA5A" stroke-width="0.8" x="0.4" y="0.4" width="86.2" height="54.2" rx="27.1"></rect>
+                <text id="" stroke="#00DB4D" stroke-width="2" fill="#FFFFFF" fill-rule="nonzero" font-family="FontAwesome" font-size="30" font-weight="normal">
+                    <tspan x="31.7142857" y="37"></tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

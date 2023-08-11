@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="9px" viewBox="0 0 10 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>calendar</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Stores" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="11.0" transform="translate(-37.000000, -535.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="Monicas-trattoria" transform="translate(37.000000, 263.000000)">
+                <g id="address" transform="translate(0.000000, 203.000000)">
+                    <g id="calendar" transform="translate(0.000000, 69.000000)">
+                        <path d="M7.641,0.546 L7.641,0 L6,0 L6,0.546 L3.275,0.546 L3.275,0 L1.637,0 L1.637,0.546 L0,0.546 L0,8.733 L9.279,8.733 L9.279,0.546 L7.641,0.546 Z M6.549,0.546 L7.1,0.546 L7.1,1.637 L6.55,1.637 L6.549,0.546 Z M2.183,0.546 L2.729,0.546 L2.729,1.637 L2.183,1.637 L2.183,0.546 Z M8.733,8.187 L0.546,8.187 L0.546,3.318 L8.733,3.318 L8.733,8.187 Z M0.546,2.772 L0.546,1.092 L1.637,1.092 L1.637,2.183 L3.275,2.183 L3.275,1.092 L6,1.092 L6,2.183 L7.641,2.183 L7.641,1.092 L8.733,1.092 L8.733,2.772 L0.546,2.772 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

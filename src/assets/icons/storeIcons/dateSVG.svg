@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>date@3x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Stores" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="11.6" transform="translate(-35.000000, -989.000000)" stroke="#222222">
+            <g id="Delivery-same-day" transform="translate(36.000000, 987.000000)">
+                <g id="date" transform="translate(0.000000, 3.000000)">
+                    <g id="_9">
+                        <rect id="Rectangle" stroke-width="0.5" x="0.00477086743" y="0" width="10.9596727" height="10.983617" rx="2.6"></rect>
+                        <line x1="3.65799509" y1="2.57446809" x2="7.35928805" y2="2.57446809" id="Path" stroke-width="0.5"></line>
+                        <line x1="8.70521277" y1="2.57446809" x2="10.7962029" y2="2.57446809" id="Path" stroke-width="0.5"></line>
+                        <line x1="0.197045827" y1="2.57446809" x2="2.31207038" y2="2.57446809" id="Path" stroke-width="0.5"></line>
+                        <rect id="Rectangle" stroke-width="0.5" x="2.4562766" y="1.61489362" width="1.17768412" height="1.91914894" rx="0.588842062"></rect>
+                        <rect id="Rectangle" stroke-width="0.5" x="7.38332242" y="1.61489362" width="1.17768412" height="1.91914894" rx="0.588842062"></rect>
+                        <rect id="Rectangle" stroke-width="0.5" x="1.71121113" y="4.8212766" width="7.59486088" height="4.45617021"></rect>
+                        <line x1="4.25885434" y1="4.91489362" x2="4.25885434" y2="9.17446809" id="Path" stroke-width="0.5"></line>
+                        <line x1="6.75842881" y1="4.91489362" x2="6.75842881" y2="9.17446809" id="Path" stroke-width="0.5"></line>
+                        <line x1="9.25800327" y1="7.04468085" x2="1.75927987" y2="7.04468085" id="Path" stroke-width="0.5"></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

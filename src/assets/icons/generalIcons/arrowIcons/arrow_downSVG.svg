@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="337px" height="337px" viewBox="0 0 337 337" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group_13906</title>
+    <defs>
+        <polygon id="path-1" points="0 0 337 0 337 337 0 337"></polygon>
+        <polygon id="path-3" points="0 337 337 337 337 0 0 0"></polygon>
+        <polygon id="path-5" points="123.5 144.021418 0.0301764706 20.0122182 19.9192549 0.0362545454 123.570329 103.998855 226.082071 1.03929091 245.97115 21.0152545"></polygon>
+        <polygon id="path-7" points="0 339.054545 337.579832 339.054545 337.579832 0 0 0"></polygon>
+        <polygon id="path-9" points="0 0 337 0 337 337 0 337"></polygon>
+        <polygon id="path-11" points="0 337 337 337 337 0 0 0"></polygon>
+    </defs>
+    <g id="symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-2738.000000, -2962.000000)">
+            <g id="Group_13901-Clipped" transform="translate(2738.000000, 2962.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Path_19241"></g>
+                <g id="Group_13901" mask="url(#mask-2)">
+                    <g id="Group_13900-Clipped">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="Path_19240"></g>
+                        <g id="Group_13900" mask="url(#mask-4)" fill="#FF0000" fill-opacity="0" fill-rule="nonzero">
+                            <g transform="translate(-70.208333, -70.208333)" id="Path_19239">
+                                <polygon points="0 0 477.416667 0 477.416667 477.416667 0 477.416667"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Group_13903-Clipped" transform="translate(2783.000000, 3078.000000)">
+                <mask id="mask-6" fill="white">
+                    <use xlink:href="#path-5"></use>
+                </mask>
+                <g id="Path_19244"></g>
+                <g id="Group_13903" mask="url(#mask-6)">
+                    <g transform="translate(-45.289916, -116.118182)" id="Group_13902-Clipped">
+                        <mask id="mask-8" fill="white">
+                            <use xlink:href="#path-7"></use>
+                        </mask>
+                        <g id="Path_19240"></g>
+                        <g id="Group_13902" mask="url(#mask-8)" fill="#515A64" fill-rule="nonzero">
+                            <g transform="translate(-25.039216, 45.481818)" id="Path_19242">
+                                <polygon points="0.0301764706 0.0362545454 386.629413 0.0362545454 386.629413 285.294145 0.0301764706 285.294145"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Group_13906-Clipped" transform="translate(2738.000000, 2962.000000)">
+                <mask id="mask-10" fill="white">
+                    <use xlink:href="#path-9"></use>
+                </mask>
+                <g id="Path_19241"></g>
+                <g id="Group_13906" mask="url(#mask-10)">
+                    <g id="Group_13905-Clipped">
+                        <mask id="mask-12" fill="white">
+                            <use xlink:href="#path-11"></use>
+                        </mask>
+                        <g id="Path_19240"></g>
+                        <g id="Group_13905" mask="url(#mask-12)" stroke="#000000" stroke-opacity="0.00999999978" stroke-width="0.02">
+                            <g id="Group_13904">
+                                <polygon id="Path_19245" points="0 0 337 0 337 337 0 337"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

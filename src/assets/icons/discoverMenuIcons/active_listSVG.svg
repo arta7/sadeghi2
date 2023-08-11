@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="15px" viewBox="0 0 16 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>list_icon_active</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11,8.57142857 L11,10 L0.044,10 L0.044,8.57142857 L11,8.57142857 Z M11,5.71428571 L11,7.14285714 L0.044,7.14285714 L0.044,5.71428571 L11,5.71428571 Z M11,2.85714286 L11,4.28571429 L0.044,4.28571429 L0.044,2.85714286 L11,2.85714286 Z M10.956,0 L10.956,1.42857143 L0,1.42857143 L0,0 L10.956,0 Z" id="path-1"></path>
+        <polygon id="path-3" points="0 17.1428571 17.6 17.1428571 17.6 0 0 0"></polygon>
+    </defs>
+    <g id="Food-Discover-(categories-with-listing)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="10.4.1" transform="translate(-125.000000, -358.000000)">
+            <g id="Price-order-/-list-setting" transform="translate(35.000000, 353.000000)">
+                <g id="list_icon_active" transform="translate(90.000000, 5.000000)">
+                    <g id="Group_14288-Clipped">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Path_19738"></g>
+                        <g id="Group_14288" mask="url(#mask-2)">
+                            <g transform="translate(-2.933333, -3.571429)" id="Group_14287-Clipped">
+                                <g>
+                                    <mask id="mask-4" fill="white">
+                                        <use xlink:href="#path-3"></use>
+                                    </mask>
+                                    <g id="Path_19734"></g>
+                                    <g id="Group_14287" mask="url(#mask-4)" fill="#F1622D">
+                                        <g transform="translate(-0.733333, 0.000000)" id="Path_19736">
+                                            <polygon points="0 0 18.3333333 0 18.3333333 17.1428571 0 17.1428571"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path_19253</title>
+    <defs>
+        <polygon id="path-1" points="8 10.586 14.293 4.293 15.707 5.707 9.414 12 15.707 18.293 14.293 19.707 8 13.414 1.707 19.707 0.293 18.293 6.586 12 0.293 5.707 1.707 4.293"></polygon>
+    </defs>
+    <g id="Profile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.0" transform="translate(-278.000000, -58.000000)">
+            <g id="close" transform="translate(278.000000, 54.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Path_19253" fill="#000000" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

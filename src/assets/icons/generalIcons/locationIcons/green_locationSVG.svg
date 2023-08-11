@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Restaurant Marker</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Order-History" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="5.3" transform="translate(-192.000000, -449.000000)">
+            <g id="Map" transform="translate(36.000000, 329.000000)">
+                <g id="trucking" transform="translate(-22.000000, -147.000000)">
+                    <g id="Monicas-trattoria" transform="translate(80.000000, 219.000000)">
+                        <g id="picked-up-restaurant-Marker" transform="translate(101.000000, 49.000000)">
+                            <g id="Restaurant-Marker-Copy">
+                                <g id="Group_18951" transform="translate(0.010000, 0.010000)" fill-rule="nonzero">
+                                    <circle id="Ellipse_2368" fill="#FFB700" opacity="0.223" cx="22.99" cy="22.99" r="15"></circle>
+                                    <circle id="Ellipse_2369" fill="#FFB700" opacity="0.137" cx="22.99" cy="22.99" r="22"></circle>
+                                    <circle id="Ellipse_2367" fill="#FFB800" opacity="0.997" cx="23.49" cy="23.49" r="6.5"></circle>
+                                </g>
+                                <g id="restaurant_Marker-2" transform="translate(10.285000, 10.985000)">
+                                    <g id="Group" transform="translate(0.710000, 0.020000)">
+                                        <g id="Ellipse_2391-2" transform="translate(0.500000, 0.000000)">
+                                            <circle id="Oval" fill="#60B344" fill-rule="nonzero" cx="11.822" cy="11.822" r="11.822"></circle>
+                                            <circle id="Oval" stroke="#FFFFFF" stroke-width="2" cx="11.822" cy="11.822" r="10.822"></circle>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
