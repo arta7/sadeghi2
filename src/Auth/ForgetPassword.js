@@ -195,7 +195,7 @@ export default ForgetPassword = (props) =>{
        placeHolder='شماره تماس'
        TextStyle={{fontSize:wp('4%'),color:'white',width:'100%'
        ,height:'100%'}}
-       style={{width:wp('70%'),marginHorizontal:'15%'
+       style={{width:wp('70%'),marginHorizontal:wp('15%')
        ,height:hp('7%')
        ,marginTop:'15%'}}
        IconName='phone'

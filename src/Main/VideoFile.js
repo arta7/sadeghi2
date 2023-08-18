@@ -77,9 +77,9 @@ export default class VideoFile extends Component {
 
   render() {
     return (
-      <View style={{ width: wp('100%'), height: hp(90), marginVertical: 20 }}>
+      <View style={{flex:1 }}>
            <View style={{ flexDirection: 'row', backgroundColor: 'rgba(9,132,226,1)', elevation: 6, height: hp('5%'), width: wp('100%') }}>
-                    <View style={{ width: wp('15%'), alignItems: 'center', justifyContent: 'center' }}>
+                    <View style={{ width: wp('15%'), alignItems: 'center', justifyContent: 'center',flexWrap:'wrap' }}>
                         <TouchableOpacity onPress={() => { this.props.navigation.goBack() }}>
                             <Icon name='arrow-back' color='white' type="materialicon" size={30} />
                         </TouchableOpacity>
@@ -102,7 +102,7 @@ export default class VideoFile extends Component {
                     </View>
             
                 </View>
-      
+     
         <VideoPlayer
           endWithThumbnail
           thumbnail={this.props.images}

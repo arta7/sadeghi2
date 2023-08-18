@@ -29,13 +29,14 @@ import {
     Segment, Drawer
 } from "native-base";
 
-const data = [{ id: '1',Video: require('./../VideosFile/1.mp4'),images:require('./../Images/Foot.png')},
-{ id: '2',Video: require('./../VideosFile/2.mp4') ,images:require('./../Images/Heart.jpg')}, 
-{ id: '3',Video: require('./../VideosFile/3.mp4'),images:require('./../Images/DiabetstAllTypes.png')},
-{ id: '4',Video: require('./../VideosFile/4.mp4'),images:require('./../Images/Eye.png')},
-{ id: '5',Video: require('./../VideosFile/5.mp4'),images:require('./../Images/Kidney.png')},
-{ id: '6',Video: require('./../VideosFile/6.mp4'),images:require('./../Images/noron.jpg')}
-
+const data = [
+    { id: '1', Video: require('./../VideosFile/3.m4v'), images: require('./../Images/DiabetstAllTypes.jpg'), Title:  'آشنایی با بیماری دیابت' },
+    { id: '2', Video: require('./../VideosFile/4.m4v'), images: require('./../Images/Eye.png'), Title:  'عوارض چشمی دیابت و خود مدیریتی آن' },
+    { id: '3', Video: require('./../VideosFile/5.mp4'), images: require('./../Images/Kidney.png'), Title: 'عوارض کلیوی دیابت و خود مدیریتی آن' },
+    { id: '4', Video: require('./../VideosFile/6.m4v'), images: require('./../Images/noron.jpg'), Title:  'عوارض نوروپاتی(عصبی)'},
+    { id: '5', Video: require('./../VideosFile/2.mp4'), images: require('./../Images/Heart.jpg'), Title:  'حمله قلبی در افراد دیابتی'},
+    { id: '6', Video: require('./../VideosFile/1.m4v'), images: require('./../Images/Foot.png'), Title:  'مراقبت پای دیابتی' },
+    { id: '7', Video: require('./../VideosFile/7.m4v'), images: require('./../Images/lifestyles.png'), Title:  '8 نوع سبزی مفید برای تعادل قند خون دیابتی' },
 ]
 
 

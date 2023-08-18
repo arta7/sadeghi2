@@ -64,11 +64,12 @@ export default Main = (props) => {
             <Drawer
                 ref={drawerRef}
                 side='right'
-                content={<Sidemenu navigation={props.navigation} />}
+                content={<Sidemenu navigation={props.navigation}   ShowItem={true}/>}
                 onClose={() => closeDrawer()}
                 openDrawerOffset={0.4}
                 panCloseMask={0.5}
                  acceptPan={true}
+                
             >
                   <View style={{ flexDirection: 'row', backgroundColor: 'rgba(9,132,226,1)', elevation: 3, height: hp('5%'), width: wp('100%') }}>
                 <View style={{ width: wp('15%'), alignItems: 'center', justifyContent: 'center' }}>

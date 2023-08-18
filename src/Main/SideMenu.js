@@ -56,26 +56,30 @@ export default class SideMenu extends Component {
           borderBottomWidth: 0,
           borderTopWidth: 0, marginTop: 20
         }}>
-          <ListItem style={styles.ListItem}>
+          {
+            !this.props.ShowItem &&
+            <ListItem style={styles.ListItem}>
 
-            <TouchableOpacity onPress={() =>
-              this.props.navigation.replace('Main')
-            }
-              style={{ flexDirection: 'row', justifyContent: 'space-between', flex: 1, borderBottomColor: 'white', borderBottomWidth: 0.5, height: 40 }}>
-              {/* <View style={{alignItems:'flex-start',justifyContent:'flex-start'}}> */}
+              <TouchableOpacity onPress={() =>
+                this.props.navigation.replace('Main')
+              }
+                style={{ flexDirection: 'row', justifyContent: 'space-between', flex: 1, borderBottomColor: 'white', borderBottomWidth: 0.5, height: 40 }}>
+                {/* <View style={{alignItems:'flex-start',justifyContent:'flex-start'}}> */}
 
-              <Icon name="home" size={24} type='antdesign' color='rgba(224,240,253,1)' />
-              <Text style={styles.text}>
-                خانه
-              </Text>
+                <Icon name="home" size={24} type='antdesign' color='rgba(224,240,253,1)' />
+                <Text style={styles.text}>
+                  خانه
+                </Text>
 
-            </TouchableOpacity>
-          </ListItem>
+              </TouchableOpacity>
+            </ListItem>
+
+          }
 
           <ListItem style={styles.ListItem}>
 
             <TouchableOpacity onPress={() => {
-             
+
               this.props.navigation.navigate('ChangePassword')
             }
 
@@ -83,7 +87,7 @@ export default class SideMenu extends Component {
               style={{ flexDirection: 'row', justifyContent: 'space-between', flex: 1, borderBottomColor: 'white', borderBottomWidth: 0.5, height: 40 }}>
               {/* <View style={{alignItems:'flex-start',justifyContent:'flex-start'}}> */}
 
-              <Icon name="md-exit" size={24} type='ionicon' color='rgba(224,240,253,1)' />
+              <Icon name="lock" size={24} type='font-awesome' color='rgba(224,240,253,1)' />
               <Text style={styles.text}>
                 تغییر رمز عبور
               </Text>

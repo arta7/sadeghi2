@@ -44,7 +44,7 @@ export default ChangePasswordAccept = (props) =>{
       <View style={{marginTop:5,justifyContent:'center'
        ,alignItems:'center',alignSelf:'center',marginTop:'30%'}}>
       <Text style={{color:'rgba(9,132,226,1)',
-        fontSize:wp('8%'),textAlign:'left'}}>
+        fontSize:wp('8%'),textAlign:'center'}}>
         تغییر رمز عبور
         </Text>
         </View>
@@ -53,7 +53,7 @@ export default ChangePasswordAccept = (props) =>{
        ,alignItems:'center',alignSelf:'center',marginTop:'5%',marginBottom:'5%'
        ,marginHorizontal:wp('15%')}}>
       <Text style={{color:'rgba(9,132,226,1)',
-        fontSize:wp('4%'),textAlign:'left'}}>
+        fontSize:wp('4%'),textAlign:'center'}}>
          {data}
         </Text>
         </View>

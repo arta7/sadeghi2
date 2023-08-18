@@ -233,11 +233,11 @@ export default Profiles = (props) => {
               />
             </View>
             <View style={{
-              justifyContent: 'center', alignItems: 'center', marginTop: '15%'
+              justifyContent: 'center', alignItems: 'center', marginTop: '10%'
             }}>
               <Text style={{
                 color: 'white',
-                fontSize: wp('8%'), textAlign: 'left'
+                fontSize: wp('6%'), textAlign: 'left'
               }}>
                 ویرایش پروفایل کاربری
               </Text>
@@ -350,10 +350,10 @@ export default Profiles = (props) => {
                 ErrorTitleStyle={{ color: '#578ad6' }}
                 BottomLine={{ backgroundColor: '#578ad6' }}
                 placeholderTextColor={'rgba(9,132,226,1)'}
-              //  keyboardtype='numeric'
+                keyboardtype='numeric'
               />
 
-              <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+              <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center',marginVertical:30 }}>
 
                 <GenderSelector
                   Title='زن'

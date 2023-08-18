@@ -180,7 +180,7 @@ export default Register = (props) => {
                 , height: '100%', borderBottomWidth: 1, borderBottomColor: 'transparent'
               }}
               style={{
-                width: wp('70%'), marginHorizontal: '15%'
+                width: wp('70%'), marginHorizontal: wp('15%')
                 , height: hp('7%')
                 , marginTop: 20
               }}
@@ -206,7 +206,7 @@ export default Register = (props) => {
                 , height: '100%', borderBottomWidth: 1, borderBottomColor: 'transparent'
               }}
               style={{
-                width: wp('70%'), marginHorizontal: '15%'
+                width: wp('70%'), marginHorizontal:wp('15%')
                 , height: hp('7%')
                 , marginTop: 20
               }}
@@ -230,7 +230,7 @@ export default Register = (props) => {
                 , height: '100%', borderBottomWidth: 1, borderBottomColor: 'transparent'
               }}
               style={{
-                width: wp('70%'), marginHorizontal: '15%'
+                width: wp('70%'), marginHorizontal: wp('15%')
                 , height: hp('7%')
                 , marginTop: 20
               }}

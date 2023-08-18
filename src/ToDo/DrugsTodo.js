@@ -1,4 +1,4 @@
-import React, { useState, useEffect ,useRef} from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
     StyleSheet, View,
     TouchableOpacity, Alert, ScrollView
@@ -44,7 +44,7 @@ export default DrugsTodo = (props) => {
     const [DrugsList, setDrugsList] = useState([])
     const [Counter, setCounter] = useState(1)
     const [EditClick, setEditClick] = useState(0)
-    const [selectedId,setselectedId] = useState(0)
+    const [selectedId, setselectedId] = useState(0)
     const drawerRef = useRef();
     useEffect(() => {
         SelectDrugsList()
@@ -63,8 +63,22 @@ export default DrugsTodo = (props) => {
 
         if (Name != '' && Dozes != '') {
             if (EditClick == 0) {
+                var Time;
+                console.log('selectedtime',selectedTime,new Date(Date.now()))
+                if (new Date(Date.now()) < selectedTime)
+                {
+                    console.log('11')
+                    Time = new Date(Date.now()).toLocaleDateString('en-US') + ' ' + selectedTime.toLocaleTimeString('en-US')
 
-                var Time = new Date(Date.now()).toLocaleDateString('en-US') + ' ' + selectedTime.toLocaleTimeString('en-US')
+                }
+                else
+                {
+                    console.log('12')
+                    const today = new Date() 
+                    const tomorrow = new Date(today)
+                tomorrow.setDate(today.getDate() + 1)
+                Time = new Date(tomorrow).toLocaleDateString('en-US') + ' ' + selectedTime.toLocaleTimeString('en-US')
+                }
 
                 setshowDateModal(false)
                 var ID = realm.objects('DrugsList').length + 1;
@@ -80,34 +94,46 @@ export default DrugsTodo = (props) => {
                         Doz: Dozes
                     });
                 })
+
+
+
             }
-            else
-            {
+            else {
                 let pr = realm.objects('DrugsList').filtered('Id = $0', selectedId)
 
-                    Notifications.cancelLocalNotification(selectedId);
+                Notifications.cancelLocalNotification(selectedId);
 
-                    realm.write(() => {
-                        realm.delete(pr)
-                    })
+                realm.write(() => {
+                    realm.delete(pr)
+                })
 
+                var Time;
+                if (new Date(Date.now()) < selectedTime)
+                    Time = new Date(Date.now()).toLocaleDateString('en-US') + ' ' + selectedTime.toLocaleTimeString('en-US')
+                else
+                {
+                    const today = new Date() 
+                    const tomorrow = new Date(today)
+                tomorrow.setDate(today.getDate() + 1)
+                Time = new Date(tomorrow).toLocaleDateString('en-US') + ' ' + selectedTime.toLocaleTimeString('en-US')
+                }
 
-                    var Time = new Date(Date.now()).toLocaleDateString('en-US') + ' ' + selectedTime.toLocaleTimeString('en-US')
+                //var Time = new Date(Date.now()).toLocaleDateString('en-US') + ' ' + selectedTime.toLocaleTimeString('en-US')
 
-                    setshowDateModal(false)
-                    var ID = realm.objects('DrugsList').length + 1;
-                    console.log('ID', ID.toString())
-                    Notifications.schduleRepeatNotification(new Date(Time), ID.toString(), ' دارو ' + Name, ' دوز دارو ' + Dozes);
-                    realm.write(() => {
-    
-                        realm.create('DrugsList', {
-                            Id: ID,
-                            Name: Name,
-                            Date: new Date().toString(),
-                            Time: selectedTime.toString(),
-                            Doz: Dozes
-                        });
-                    })
+                setshowDateModal(false)
+                var ID = realm.objects('DrugsList').length + 1;
+                console.log('ID', ID.toString())
+                Notifications.schduleRepeatNotification(new Date(Time), ID.toString(), ' دارو ' + Name, ' دوز دارو ' + Dozes);
+                realm.write(() => {
+
+                    realm.create('DrugsList', {
+                        Id: ID,
+                        Name: Name,
+                        Date: new Date().toString(),
+                        Time: selectedTime.toString(),
+                        Doz: Dozes
+                    });
+                })
 
 
             }
@@ -115,6 +141,8 @@ export default DrugsTodo = (props) => {
             setCounter(Counter + 1)
             setEditClick(0)
             setselectedId(0)
+            setDozes('')
+            setName('')
         }
         else {
             Alert.alert('لطفا اطلاعات را درست وارد کنید')
@@ -176,7 +204,7 @@ export default DrugsTodo = (props) => {
 
     return (
         <View style={styles.root}>
-               <Drawer
+            <Drawer
                 ref={drawerRef}
                 side='right'
                 content={<Sidemenu navigation={props.navigation} />}
@@ -185,194 +213,194 @@ export default DrugsTodo = (props) => {
                 panCloseMask={0.5}
                 acceptPan={true}
             >
-            <View style={{ flexDirection: 'row', backgroundColor: 'rgba(9,132,226,1)', elevation: 6, height: hp('5%'), width: wp('100%') }}>
-                <View style={{ width: wp('15%'), alignItems: 'center', justifyContent: 'center' }}>
-                    <TouchableOpacity onPress={() => { props.navigation.goBack() }}>
-                        <Icon name='arrow-back' color='white' type="materialicon" size={30} />
-                    </TouchableOpacity>
-                </View>
-                <View style={{ width: wp('70%'), justifyContent: 'center', alignItems: 'center' }}>
-                    <Text style={{
-                       fontSize: wp('3.5%'),
-                        width: '100%',
-                        color: 'white',
-                        justifyContent: 'center',
-                        textAlign: 'right'
-                    }}>هشدارهای دارویی</Text>
-                </View>
-                <View style={{ width: wp('15%'), alignItems: 'center', justifyContent: 'center' }}>
-                <TouchableOpacity  onPress={()=>{openDrawer()}}>
-                          <Icon name='menu' color='white' />
-                    </TouchableOpacity>
-                </View>
-                {/* <View style={{ width: wp('10%') }}>
+                <View style={{ flexDirection: 'row', backgroundColor: 'rgba(9,132,226,1)', elevation: 6, height: hp('5%'), width: wp('100%') }}>
+                    <View style={{ width: wp('15%'), alignItems: 'center', justifyContent: 'center' }}>
+                        <TouchableOpacity onPress={() => { props.navigation.goBack() }}>
+                            <Icon name='arrow-back' color='white' type="materialicon" size={30} />
+                        </TouchableOpacity>
+                    </View>
+                    <View style={{ width: wp('70%'), justifyContent: 'center', alignItems: 'center' }}>
+                        <Text style={{
+                            fontSize: wp('3.5%'),
+                            width: '100%',
+                            color: 'white',
+                            justifyContent: 'center',
+                            textAlign: 'right'
+                        }}>هشدارهای دارویی</Text>
+                    </View>
+                    <View style={{ width: wp('15%'), alignItems: 'center', justifyContent: 'center' }}>
+                        <TouchableOpacity onPress={() => { openDrawer() }}>
+                            <Icon name='menu' color='white' />
+                        </TouchableOpacity>
+                    </View>
+                    {/* <View style={{ width: wp('10%') }}>
 
                 </View> */}
-            </View>
+                </View>
 
-            <FlatList
-                data={DrugsList}
-                renderItem={({ item, index }) =>
-                    <View style={{
-                        width: wp(90), height: hp(13), marginHorizontal: wp(5),
-                        elevation: 2, borderWidth: 1, borderColor: 'transparent'
-                        , borderRadius: 5, marginVertical: 10, flexDirection: 'row', backgroundColor: '#c7ddfc', justifyContent: 'space-between'
-                    }}>
-                        <View style={{ width: '40%', height: '100%', flexDirection: 'row', padding: 5, alignItems: 'center' }}
+                <FlatList
+                    data={DrugsList}
+                    renderItem={({ item, index }) =>
+                        <View style={{
+                            width: wp(90), height: hp(13), marginHorizontal: wp(5),
+                            elevation: 2, borderWidth: 1, borderColor: 'transparent'
+                            , borderRadius: 5, marginVertical: 10, flexDirection: 'row', backgroundColor: '#c7ddfc', justifyContent: 'space-between'
+                        }}>
+                            <View style={{ width: '40%', height: '100%', flexDirection: 'row', padding: 5, alignItems: 'center' }}
 
-                        >
-                            <TouchableOpacity style={{ paddingHorizontal: 20 }}
-                                onPress={() => { DeleteDrugList(item.Id) }}
                             >
-                                <Icon name='delete' color='rgba(9,132,226,1)' type="materialicon" size={wp(6)} />
-                            </TouchableOpacity>
-                            <TouchableOpacity style={{ paddingHorizontal: 20 }}
-                                onPress={() => {
-                                    setEditClick(1)
-                                    setName(item.Name)
-                                    setDozes(item.Doz)
-                                    setselectedTime(new Date(item.Time.toLocaleString()));
-                                    setselectedId(item.Id)
-                                   
-                                    setShowModal(true)
-                                   
+                                <TouchableOpacity style={{ paddingHorizontal: 20 }}
+                                    onPress={() => { DeleteDrugList(item.Id) }}
+                                >
+                                    <Icon name='delete' color='rgba(9,132,226,1)' type="materialicon" size={wp(6)} />
+                                </TouchableOpacity>
+                                <TouchableOpacity style={{ paddingHorizontal: 20 }}
+                                    onPress={() => {
+                                        setEditClick(1)
+                                        setName(item.Name)
+                                        setDozes(item.Doz)
+                                        setselectedTime(new Date(item.Time.toLocaleString()));
+                                        setselectedId(item.Id)
+
+                                        setShowModal(true)
+
+                                    }}
+                                >
+                                    <Icon name='edit' color='rgba(9,132,226,1)' type="materialicon" size={wp(6)} />
+                                </TouchableOpacity >
+                            </View>
+                            <View style={{ width: '60%', paddingHorizontal: 15, justifyContent: 'center' }}>
+                                <Text style={{ fontSize: wp(3.5), color: 'black', textAlign: 'right' }}>{item.Name}</Text>
+                                <Text style={{ fontSize: wp(3), color: 'black', textAlign: 'right' }} numberOfLines={1} >{item.Doz}</Text>
+                                <Text style={{ fontSize: wp(3.5), color: 'black', textAlign: 'right' }}>
+                                    {new Date(item.Time).toLocaleTimeString('en-US').replace(/([\d]+:[\d]{2})(:[\d]{2})(.*)/, "$1$3")}</Text>
+
+                            </View>
+
+
+                        </View>
+
+                    }
+
+                />
+
+                <FloatingAction
+                    onPressMain={() => { setShowModal(true) }}
+                    position='right'
+                    color='rgba(9,132,226,1)'
+                    overlayColor='transparent'
+                />
+
+
+
+
+                <CenterModals
+                    showModal={showModal}
+                    closeModal={() => {
+                        setEditClick(0)
+                        setShowModal(false)
+                    }}
+                    ViewStyle={{ height: 350, width: '100%' }}
+                    Children={
+                        <View style={{ width: '90%', marginHorizontal: '5%' }}>
+
+                            <TextInputs
+                                changeText={(value) => { setName(value) }}
+                                values={Name}
+                                placeHolder={'نام دارو'}
+                                TextStyle={{
+                                    fontSize: wp('4%'), color: 'blue', width: '100%'
+                                    , height: '100%'
                                 }}
-                            >
-                                <Icon name='edit' color='rgba(9,132,226,1)' type="materialicon" size={wp(6)} />
-                            </TouchableOpacity >
-                        </View>
-                        <View style={{ width: '60%', paddingHorizontal: 15, justifyContent: 'center' }}>
-                            <Text style={{ fontSize: wp(3.5), color: 'black', textAlign: 'right' }}>{item.Name}</Text>
-                            <Text style={{ fontSize: wp(3), color: 'black', textAlign: 'right' }} numberOfLines={1} >{item.Doz}</Text>
-                            <Text style={{ fontSize: wp(3.5), color: 'black', textAlign: 'right' }}>
-                                {new Date(item.Time).toLocaleTimeString('en-US').replace(/([\d]+:[\d]{2})(:[\d]{2})(.*)/, "$1$3")}</Text>
-
-                        </View>
-
-
-                    </View>
-
-                }
-
-            />
-
-            <FloatingAction
-                onPressMain={() => { setShowModal(true) }}
-                position='right'
-                color='rgba(9,132,226,1)'
-                overlayColor='transparent'
-            />
-
-
-
-
-            <CenterModals
-                showModal={showModal}
-                closeModal={() => {
-                    setEditClick(0)
-                    setShowModal(false)
-                }}
-                ViewStyle={{ height: 350, width: '100%' }}
-                Children={
-                    <View style={{ width: '90%', marginHorizontal: '5%' }}>
-
-                        <TextInputs
-                            changeText={(value) => { setName(value) }}
-                            values={Name}
-                            placeHolder={'نام دارو'}
-                            TextStyle={{
-                                fontSize: wp('4%'), color: 'blue', width: '100%'
-                                , height: '100%'
-                            }}
-                            style={{
-                                width: ('70%'), marginHorizontal: '15%'
-                                , height: ('7%')
-                                , marginVertical: 25
-                            }}
-                            IconName='user'
-                            IconType='font-awesome'
-                            IconColor='white'
-                            ErrorTitle={''}
-                            showIcon={true}
-                            BottomLine={{ backgroundColor: 'rgba(9,132,226,1)' }}
-                            IconView={{ backgroundColor: 'rgba(9,132,226,1)' }}
-                            ErrorTitleStyle={{ color: 'white' }}
-                            placeholderTextColor={'rgba(9,132,226,1)'}
-                        />
-
-                        <TextInputs
-                            changeText={(value) => { setDozes(value) }}
-                            values={Dozes}
-                            placeHolder={'دز دارو'}
-                            TextStyle={{
-                                fontSize: wp('4%'), color: 'blue', width: '100%'
-                                , height: '100%'
-                            }}
-                            style={{
-                                width: ('70%'), marginHorizontal: '15%'
-                                , height: ('7%')
-                                , marginVertical: 25
-                            }}
-                            IconName='user'
-                            IconType='font-awesome'
-                            IconColor='white'
-                            ErrorTitle={''}
-                            BottomLine={{ backgroundColor: 'rgba(9,132,226,1)' }}
-                            IconView={{ backgroundColor: 'transparent' }}
-                            showIcon={true}
-                            ErrorTitleStyle={{ color: 'white' }}
-                            placeholderTextColor={'rgba(9,132,226,1)'}
-                            MultiLine={true}
-                        />
-
-                        <View style={{ flexDirection: 'row-reverse', alignItems: 'center', marginTop: 30 }}>
-                            <Text style={{ textAlign: 'right', fontSize: wp(4), fontWeight: 'bold', padding: 15 }}>ساعت :  </Text>
-
-                            <TouchableOpacity style={{
-                                width: '60%', height: 50, borderRadius: 5,
-                                backgroundColor: 'rgba(9,132,226,1)', justifyContent: 'center', alignItems: 'center'
-                            }}
-                                onPress={() => {
-                                    setTimePicker(true)
-                                }}>
-                                <Text style={{ textAlign: 'center', color: 'white', fontSize: wp(4) }}>{
-                                    selectedTime?.toLocaleTimeString('en-US').replace(/([\d]+:[\d]{2})(:[\d]{2})(.*)/, "$1$3")}</Text>
-                            </TouchableOpacity>
-                        </View>
-
-                        {timePicker &&
-                            <DateTimePicker
-                                value={selectedTime}
-                                mode='time'
-                                is24Hour={true}
-                                display="default"
-                                onChange={onTimeSelected}
-
-
-
+                                style={{
+                                    width: ('70%'), marginHorizontal: '15%'
+                                    , height: ('7%')
+                                    , marginVertical: 25
+                                }}
+                                IconName='user'
+                                IconType='font-awesome'
+                                IconColor='white'
+                                ErrorTitle={''}
+                                showIcon={true}
+                                BottomLine={{ backgroundColor: 'rgba(9,132,226,1)' }}
+                                IconView={{ backgroundColor: 'rgba(9,132,226,1)' }}
+                                ErrorTitleStyle={{ color: 'white' }}
+                                placeholderTextColor={'rgba(9,132,226,1)'}
                             />
-                        }
 
-                        <View style={{ justifyContent: 'center', alignItems: 'center', marginTop: 30 }}>
-                            <TouchableOpacity style={{
-                                borderRadius: 5, width: wp(25), height: 40, justifyContent: 'center'
-                                , backgroundColor: 'rgba(9,132,226,1)', elevation: 1
-                            }}
-                                onPress={() => { CreateDrugs() }}
-                            >
-                                <Text style={{ textAlign: 'center', fontSize: wp(4), color: 'white' }}>ثبت</Text>
-                            </TouchableOpacity>
+                            <TextInputs
+                                changeText={(value) => { setDozes(value) }}
+                                values={Dozes}
+                                placeHolder={'دز دارو (مثلا یک عدد،یک قاشق و ...)'}
+                                TextStyle={{
+                                    fontSize: wp('4%'), color: 'blue', width: '100%'
+                                    , height: '100%'
+                                }}
+                                style={{
+                                    width: ('70%'), marginHorizontal: '15%'
+                                    , height: ('7%')
+                                    , marginVertical: 25
+                                }}
+                                IconName='user'
+                                IconType='font-awesome'
+                                IconColor='white'
+                                ErrorTitle={''}
+                                BottomLine={{ backgroundColor: 'rgba(9,132,226,1)' }}
+                                IconView={{ backgroundColor: 'transparent' }}
+                                showIcon={true}
+                                ErrorTitleStyle={{ color: 'white' }}
+                                placeholderTextColor={'rgba(9,132,226,1)'}
+                                MultiLine={true}
+                            />
+
+                            <View style={{ flexDirection: 'row-reverse', alignItems: 'center', marginTop: 30 }}>
+                                <Text style={{ textAlign: 'right', fontSize: wp(4), fontWeight: 'bold', padding: 15 }}>ساعت :  </Text>
+
+                                <TouchableOpacity style={{
+                                    width: '60%', height: 50, borderRadius: 5,
+                                    backgroundColor: 'rgba(9,132,226,1)', justifyContent: 'center', alignItems: 'center'
+                                }}
+                                    onPress={() => {
+                                        setTimePicker(true)
+                                    }}>
+                                    <Text style={{ textAlign: 'center', color: 'white', fontSize: wp(4) }}>{
+                                        selectedTime?.toLocaleTimeString('en-US').replace(/([\d]+:[\d]{2})(:[\d]{2})(.*)/, "$1$3")}</Text>
+                                </TouchableOpacity>
+                            </View>
+
+                            {timePicker &&
+                                <DateTimePicker
+                                    value={selectedTime}
+                                    mode='time'
+                                    is24Hour={true}
+                                    display="default"
+                                    onChange={onTimeSelected}
+
+
+
+                                />
+                            }
+
+                            <View style={{ justifyContent: 'center', alignItems: 'center', marginTop: 30 }}>
+                                <TouchableOpacity style={{
+                                    borderRadius: 5, width: wp(25), height: 40, justifyContent: 'center'
+                                    , backgroundColor: 'rgba(9,132,226,1)', elevation: 1
+                                }}
+                                    onPress={() => { CreateDrugs() }}
+                                >
+                                    <Text style={{ textAlign: 'center', fontSize: wp(4), color: 'white' }}>ثبت</Text>
+                                </TouchableOpacity>
+
+                            </View>
+
+
+
 
                         </View>
+                    }
+                />
 
-
-
-
-                    </View>
-                }
-            />
-
-</Drawer>
+            </Drawer>
 
         </View>
 

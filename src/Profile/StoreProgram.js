@@ -2,9 +2,9 @@ import React, { useRef, useState, useEffect, useContext } from "react";
 import {
     StyleSheet, View,
     TouchableOpacity, Alert, ScrollView
-    , ActivityIndicator, BackHandler, FlatList, Image, Linking, Text
+    , ActivityIndicator, BackHandler, FlatList, Image, Linking, Text 
 } from "react-native";
-import axios from 'axios'
+import axios from 'axios';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 
 import { Icon, Rating } from "react-native-elements";
@@ -26,7 +26,11 @@ import {
 import RenderHtml from 'react-native-render-html';
 
 
+
+
+
 export default StoreProgram = (props) => {
+    
     const [showIcon, setshowIcon] = useState(false)
     const drawerRef = useRef();
     // const value = useContext(Redux);
@@ -39,6 +43,13 @@ export default StoreProgram = (props) => {
 
     let openDrawer = () => {
         drawerRef?.current._root.open()
+    }
+    
+   
+    const imagesList =
+    {
+        Foot: require('./../Images/Foot.png'),
+        acquaintance: require('./../Images/acquaintance.png')
     }
 
     let checkItemIcon = (t) => {
@@ -61,7 +72,7 @@ export default StoreProgram = (props) => {
 
     return (
         <View style={styles.root}>
-   <Drawer
+            <Drawer
                 ref={drawerRef}
                 side='right'
                 content={<Sidemenu navigation={props.navigation} />}
@@ -70,58 +81,73 @@ export default StoreProgram = (props) => {
                 panCloseMask={0.5}
                 acceptPan={true}
             >
-            <View style={{ flexDirection: 'row', backgroundColor: 'rgba(9,132,226,1)', elevation: 6, height: hp('5%'), width: wp('100%') }}>
-                <View style={{ width: wp('15%'), alignItems: 'center', justifyContent: 'center' }}>
-                    <TouchableOpacity onPress={() => { props.navigation.goBack() }}>
-                        <Icon name='arrow-back' color='white' type="materialicon" size={30} />
-                    </TouchableOpacity>
-                </View>
-                <View style={{ width: wp('70%'), justifyContent: 'center', alignItems: 'center' }}>
-                    <Text style={{
-                        fontSize: wp('3.5%'),
-                        width: '100%',
-                        color: 'white',
-                        justifyContent: 'center',
-                        textAlign: 'right'
-                    }}>{data.Title}</Text>
-                </View>
-                <View style={{ width: wp('15%'), alignItems: 'center', justifyContent: 'center' }}>
-                <TouchableOpacity  onPress={()=>{openDrawer()}}>
-                          <Icon name='menu' color='white' />
-                    </TouchableOpacity>
-                </View>
-                {/* <View style={{ width: wp('10%') }}>
+                <View style={{ flexDirection: 'row', backgroundColor: 'rgba(9,132,226,1)', elevation: 6, height: hp('5%'), width: wp('100%') }}>
+                    <View style={{ width: wp('15%'), alignItems: 'center', justifyContent: 'center' }}>
+                        <TouchableOpacity onPress={() => { props.navigation.goBack() }}>
+                            <Icon name='arrow-back' color='white' type="materialicon" size={30} />
+                        </TouchableOpacity>
+                    </View>
+                    <View style={{ width: wp('70%'), justifyContent: 'center', alignItems: 'center' }}>
+                        <Text style={{
+                            fontSize: wp('3.5%'),
+                            width: '100%',
+                            color: 'white',
+                            justifyContent: 'center',
+                            textAlign: 'right'
+                        }}>{data.Title}</Text>
+                    </View>
+                    <View style={{ width: wp('15%'), alignItems: 'center', justifyContent: 'center' }}>
+                        <TouchableOpacity onPress={() => { openDrawer() }}>
+                            <Icon name='menu' color='white' />
+                        </TouchableOpacity>
+                    </View>
+                    {/* <View style={{ width: wp('10%') }}>
 
                 </View> */}
-            </View>
-
-
-            <ScrollView>
-
-
-
-
-                <View style={styles.showMainImageView}>
-                    <Image source={data?.photo}
-                        style={{ width: '100%', height: '100%', overflow: 'hidden' }}
-                        resizeMode='stretch' />
-
-
                 </View>
 
 
-                <View style={styles.rootProgram}>
+                <ScrollView>
 
-                   
-                    <RenderHtml
-                        source={{html:'<body style="font-size: 1.1rem;padding:5px;text-align: right;"'+data.Description+'</body>'}} 
-                        
-                    />
 
-                </View>
 
-            </ScrollView>
-</Drawer>
+
+                    <View style={styles.showMainImageView}>
+                        <Image source={data?.photo}
+                            style={{ width: '100%', height: '100%', overflow: 'hidden' }}
+                            resizeMode='stretch' />
+
+
+                    </View>
+
+
+                    <View style={styles.rootProgram}>
+
+
+                        <RenderHtml
+                        style={{flexDirection:'row'}}
+                            renderers={{
+                                img: (attribs,ss) => {
+                                   
+                                    const imagePath = attribs.source;
+                                    console.log('imagePath : ',ss)
+                                    return (
+                                        <Image
+                                            key={attribs.source}
+                                            style={{ width: '80%', height: hp(25), marginHorizontal: '10%' }}
+                                            source={imagesList[imagePath]}
+                                        />
+                                    );
+                                },
+                            }}
+                            source={{ html: '<body style="font-size: 1.2rem;padding:5px;text-align: justify" >' + data.Description + '</body> ' }}
+
+                        />
+
+                    </View>
+
+                </ScrollView>
+            </Drawer>
         </View>
 
 
@@ -140,8 +166,8 @@ const styles = StyleSheet.create({
     },
     rootProgram:
     {
-        width: wp('90%'), marginHorizontal: wp('5%'), elevation: 1, borderWidth: 0.5
-        , borderColor: 'grey', borderRadius: 10, padding: 10, marginBottom: 10
+        width: wp('90%'), marginHorizontal: wp('5%'), borderWidth: 0.5
+        , borderColor: 'grey', borderRadius: 10, marginBottom: 10
     },
     BottomView:
     {

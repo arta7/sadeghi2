@@ -18,9 +18,6 @@ import {LoginAPI} from './../API/APIMaster'
 //   useTranslations,
 //   useTranslationsState,
 // } from 'react-native-text-localizer';
-import { translationsContext } from '../l10n';
-import CenterModal from '../Components/CenterModal';
-import { Address } from "../API/Address";
 // import {Redux} from '../Control/Data'
 // const Language=[{id:'1',Title:'English'},{id:'2',Title:'Germany'}]
 
@@ -207,7 +204,7 @@ export default Login = (props) =>{
        placeHolder={'شماره موبایل'}
        TextStyle={{fontSize:wp('4%'),color:'white',width:'100%'
        ,height:'100%'}}
-       style={{width:wp('70%'),marginHorizontal:'15%'
+       style={{width:wp('70%'),marginHorizontal:wp('15%')
        ,height:hp('7%')
        ,marginTop:20}}
        IconName='user'
@@ -227,7 +224,7 @@ export default Login = (props) =>{
        secure={true}
        TextStyle={{fontSize:wp('4%'),color:'white',width:'100%'
        ,height:'100%'}}
-       style={{width:wp('70%'),marginHorizontal:'15%'
+       style={{width:wp('70%'),marginHorizontal:wp('15%')
        ,height:hp('7%')
        ,marginTop:20}}
        IconName='lock'
@@ -240,7 +237,7 @@ export default Login = (props) =>{
      /> 
 
      <View style={{flexDirection:'row-reverse',
-     width:wp('70%'),marginHorizontal:'15%'
+     width:wp('70%'),marginHorizontal:wp('15%')
      ,marginTop:20,justifyContent:'space-between',alignItems:'center'}}>
      {/* <TouchableOpacity style={{flexDirection:'row-reverse',
      justifyContent:'center',alignItems:'center'}}>

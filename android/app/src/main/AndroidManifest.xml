@@ -15,7 +15,6 @@
       android:icon="@mipmap/ic_launcher"
       android:roundIcon="@mipmap/ic_launcher_round"
       android:allowBackup="false"
-      android:largeHeap="true"
       android:usesCleartextTraffic="true"
       android:theme="@style/AppTheme">
          
@@ -59,7 +58,7 @@
               <action android:name="android.intent.action.BOOT_COMPLETED" />
           </intent-filter>
       </receiver>
-      <service android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationRegistrationService"/>
+      <service android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationRegistrationService" android:exported="true"/>
 
       <service android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerServiceGcm" android:exported="true">
           <intent-filter>

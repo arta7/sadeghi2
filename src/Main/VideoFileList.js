@@ -30,13 +30,14 @@ import {
     Segment, Drawer
 } from "native-base";
 
-const data = [{ id: '1', Video: require('./../VideosFile/1.mp4'), images: require('./../Images/Foot.png'), Title: 'test1' },
-{ id: '2', Video: require('./../VideosFile/2.mp4'), images: require('./../Images/Heart.jpg'), Title: 'test1' },
-{ id: '3', Video: require('./../VideosFile/3.mp4'), images: require('./../Images/DiabetstAllTypes.png'), Title: 'test1' },
-{ id: '4', Video: require('./../VideosFile/4.mp4'), images: require('./../Images/Eye.png'), Title: 'test1' },
-{ id: '5', Video: require('./../VideosFile/5.mp4'), images: require('./../Images/Kidney.png'), Title: 'test1' },
-{ id: '6', Video: require('./../VideosFile/6.mp4'), images: require('./../Images/noron.jpg'), Title: 'test1' }
-
+const data = [
+    { id: '1', Video: require('./../VideosFile/3.m4v'), images: require('./../Images/DiabetstAllTypes.jpg'), Title:  'آشنایی با بیماری دیابت' },
+    { id: '2', Video: require('./../VideosFile/4.m4v'), images: require('./../Images/Eye.png'), Title:  'عوارض چشمی دیابت و خود مدیریتی آن' },
+    { id: '3', Video: require('./../VideosFile/5.mp4'), images: require('./../Images/Kidney.png'), Title: 'عوارض کلیوی دیابت و خود مدیریتی آن' },
+    { id: '4', Video: require('./../VideosFile/6.m4v'), images: require('./../Images/noron.jpg'), Title:  'عوارض نوروپاتی(عصبی)'},
+    { id: '5', Video: require('./../VideosFile/2.mp4'), images: require('./../Images/Heart.jpg'), Title:  'حمله قلبی در افراد دیابتی'},
+    { id: '6', Video: require('./../VideosFile/1.m4v'), images: require('./../Images/Foot.png'), Title:  'مراقبت پای دیابتی' },
+    { id: '7', Video: require('./../VideosFile/7.m4v'), images: require('./../Images/lifestyles.png'), Title:  '8 نوع سبزی مفید برای تعادل قند خون دیابتی' },
 ]
 
 
@@ -119,26 +120,21 @@ export default VideoFileList = (props) => {
                 <FlatList
                     data={data}
                     renderItem={({ item, index }) =>
-                        <View style={{ width: wp('100%'), height: hp(42), marginVertical: 20 }}>
-                            <View style={{ justifyContent: 'center' }}>
-                                <Text style={{ fontSize: wp(3.5), color: 'black', textAlign: 'right', paddingHorizontal: 10 }}>{item.Title}</Text>
-                            </View>
-                            <TouchableOpacity style={{ width: wp('100%'), height: hp(40) }}
+                        <View style={{ width: wp('100%'), height: hp(11), marginVertical: 20,borderBottomWidth:0.5
+                        ,borderBottomColor:'gray',flexDirection:'row-reverse',justifyContent:'center',alignSelf:'center',alignSelf:'center' }}>
+
+                            <TouchableOpacity style={{ width: wp('70%'),marginRight:20, height: hp(10)
+                            ,justifyContent:'center',alignItems:'center',borderWidth:1,borderRadius:10,borderColor:'rgba(9,132,226,1)' }}
                             disabled={true}
-                           // onPress={()=>{props.navigation.push('ShowVideo', { item: item })}}
                             >
-                                <Image
-                                    source={item.images}
-                                    style={{ width: wp('95%'),marginHorizontal:wp(2.5), height: hp(40),borderWidth:1
-                                    ,borderRadius:10,elevation:2,borderColor:'gray' }}
-                                    resizeMode="cover"
-                                />
+                                 <Text style={{ fontSize: wp(4), color: 'black', textAlign: 'center', 
+                                 paddingHorizontal: 20,paddingBottom:5 }}>{item.Title}</Text>
                             </TouchableOpacity>
-                                <TouchableOpacity style={{position:'absolute',bottom:'40%',right:'40%',elevation:5,
-                                justifyContent:'center',alignItems:'center',borderRadius:50,width:100,height:100}}
+                                <TouchableOpacity style={{elevation:5,marginRight:20,
+                                justifyContent:'center',alignItems:'center',borderRadius:wp(3),width:wp(15),height:wp(15)}}
                                 onPress={()=>{props.navigation.push('ShowVideo', { item: item })}}
                                 >  
-                                <Icon name='caretright' size={30} color='gray' type='antdesign' />
+                                <Icon name='caretright' size={25} color='gray' type='antdesign' style={{justifyContent:'center',alignSelf:'center'}} />
                                 </TouchableOpacity>
                           
                         

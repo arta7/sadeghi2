@@ -48,6 +48,7 @@ export default Medicalknowledge = (props) => {
                 panCloseMask={0.5}
                 acceptPan={true}
             >
+                <ScrollView>
               <View style={{flexDirection: 'row', backgroundColor: 'rgba(9,132,226,1)', elevation: 6, height: hp('5%'), width: wp('100%')}}>
             <View style={{width: wp('15%'), alignItems: 'center', justifyContent: 'center'}}>
             <TouchableOpacity onPress={() => { props.navigation.goBack() }}>
@@ -71,6 +72,17 @@ export default Medicalknowledge = (props) => {
             
             </View> */}
         </View>
+
+        <View style={{
+            justifyContent: 'center', alignItems: 'center', width: wp('80%'),
+            marginHorizontal: wp(10), borderRadius: 10, borderWidth: 0.5, elevation: 2, marginTop: 10, backgroundColor: '#deeafc', marginBottom: 10
+
+          }}>
+            <Text style={{
+              color: "green",
+              fontSize: wp(3.5), padding: 10,textAlign:'center'
+            }}>دانش کافی جزء اصلی مدیریت دیابت است. افزایش دانش بیماران در مورد دیابت و عوارض آن مزایای قابل توجهی در مورد پایبندی به درمان و کاهش عوارض دارد. افراد با دانش ناکافی و سواد سلامت پایین در مورد عوارض دیابت، احتمالاً کنترل قند خون پایین‌تری دارند و خطر ابتلا به عوارض را افزایش می‌دهند، زیرا اغلب در درک و پیروی از دستورالعمل‌های پزشکی با چالش‌هایی مواجه هستند. آگاهی از عوارض دیابت برای شناخت زودهنگام علائم و نشانه‌های هشداردهنده لازم برای برنامه‌ریزی و اجرای مداخلات پیشگیرانه مناسب برای جلوگیری یا به تاخیر انداختن عوارض مرتبط است.</Text>
+            </View>
 
        
         <FlatList
@@ -100,6 +112,7 @@ export default Medicalknowledge = (props) => {
             }
 
             />
+            </ScrollView>
 </Drawer>
         </View>
 

@@ -160,7 +160,7 @@ export default ChangePassword = (props) => {
 
           <View style={[styles.TopTextView, {
             marginBottom: 5
-            , marginHorizontal: wp('10')
+            , marginHorizontal: wp(10)
           }]}>
             <Text style={[styles.TopText, {
               fontSize: wp('4')
@@ -212,7 +212,7 @@ export default ChangePassword = (props) => {
               <ActivityIndicator size='large' color='white'
                 style={{
                   width: wp('40')
-                  , marginHorizontal: wp('30'),
+                  , marginHorizontal: wp(30),
                   justifyContent: 'center', alignItems: 'center', marginTop: 30
                 }} />
               :
@@ -284,7 +284,7 @@ const styles = StyleSheet.create({
     , height: '100%'
   },
   TextinputStyle: {
-    width: wp('70%'), marginHorizontal: '15%'
+    width: wp('70%'), marginHorizontal: wp('15%')
     , height: hp('7%')
     , marginTop: 20
   },
