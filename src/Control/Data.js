@@ -43,7 +43,7 @@ export const MedicalknowledgeList =
 </p>
 <p dir="RTL">
   
-    <img source='acquaintance'/>
+
 </p>
 		 `   
                          },
@@ -56,7 +56,7 @@ export const MedicalknowledgeList =
     الف) نوع 1 که در آن لوزالمعده انسولین تولید نمی‌کند.
 </p>
 <p dir="RTL">
-    (ب) نوع 2 که در  آن سلول‌های بدن در برابر عمل انسولین تولید شده مقاوم هستند
+    ب) نوع 2 که در  آن سلول‌های بدن در برابر عمل انسولین تولید شده مقاوم هستند
     و با گذشت زمان تولید  انسولین به تدریج کاهش می‌یابد.
 </p>
 <p dir="RTL">
@@ -170,7 +170,7 @@ export const MedicalknowledgeList =
                     ·   <strong>بیماری کلیوی مرحله  نهایی
                      (<a href="file:///F:/project/%D9%85%D8%AA%D9%88%D9%86%20%D9%85%D9%86%D9%88%20%D9%86%D8%B1%D9%85%20%D8%A7%D9%81%D8%B2%D8%A7%D8%B1-%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%20%D9%86%D9%88%DB%8C%D8%B3.docx#_ftn1" name="_ftnref1"
                      title=""></a></strong><strong>ESRD<a href="file:///F:/project/%D9%85%D8%AA%D9%88%D9%86%20%D9%85%D9%86%D9%88%20%D9%86%D8%B1%D9%85%20%D8%A7%D9%81%D8%B2%D8%A7%D8%B1-%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%20%D9%86%D9%88%DB%8C%D8%B3.docx#_ftn2" name="_ftnref2"
-                     title=""></a>/ ESKD</strong><strong></strong><strong>):</strong>بیماری 
+                     title=""></a>/ ESKD = End Stage Renal or Kidney  Disease </strong><strong></strong><strong>):</strong>بیماری 
                      کلیوی مرحله نهایی یک وضعیت پزشکی است که در آن کلیه‌های فرد به طور دائمی کار
                      نمی‌کنند  و نمی‌توانند خون مواد زائد و مایعات اضافی را فیلتر کنند که برای
                      زنده ماندن نیاز  به دیالیز یا پیوند کلیه می‌باشد. <strong></strong>
@@ -203,7 +203,7 @@ export const MedicalknowledgeList =
                 
                  <p dir="RTL">
               
-                 ·    <strong>بیماری عروق کرونر(</strong><strong>CAD</strong><strong>):</strong><strong></strong>رایج 
+                 ·    <strong>بیماری عروق کرونر(</strong><strong>CAD = Coronary Artery Disease </strong><strong>):</strong><strong></strong>رایج 
                      ترین نوع بیماری قلبی نیز بیماری عروق  کرونر به حساب می آید که گردش خون به
                      سمت قلب را تحت تاثیر قرار می دهد.<strong></strong>بیماری عروق کرونر به دلیل
                      تجمع پلاک در دیواره عروق کرونر، رگ‌های خونی که اکسیژن و خون را  به قلب
@@ -224,7 +224,7 @@ export const MedicalknowledgeList =
                      </p>
                  
                  <p dir="RTL">
-                 ·    <strong>بیماری شریان محیطی(</strong><strong>PAD</strong><strong>):</strong>بیماری 
+                 ·    <strong>بیماری شریان محیطی(</strong><strong>PAD = Peripheral Artery Disease </strong><strong>):</strong>بیماری 
                      شریان محیطی  به انسداد جزئی یا کامل عروق محیطی اندام فوقانی و تحتانی اشاره
                      دارد. رسوبات چربی  در پوشش داخلی دیواره شریان پاها تجمع می‌یابد، آنها را
                      باریک‌تر می‌کند و جریان خون  را مختل می‌کند و حتی می‌تواند جریان خون را به
@@ -268,7 +268,7 @@ export const MedicalknowledgeList =
                  </p>
                  <p dir="RTL">
                    
-                 ·         درجه 4: گانگرن  موضعی
+                 ·         درجه 4: گانگرن  موضعی (گانگرن : سیاه شدن (مرگ) بافت ناشی از اختلال در خون رسانی)
                      
                  </p>
                  <p dir="RTL">
@@ -279,8 +279,12 @@ export const MedicalknowledgeList =
                  
                  </p>
                  <p dir="RTL">
-                    
-                     <img source="./../Images/Foot.png"/>
+                 <img
+                 max-width="250"
+                 max-height="300"
+                 
+                 src="https://s6.uupload.ir/files/foot_ihdr.png"
+                     />
                      <br/>
                  </p>
                  
@@ -296,24 +300,23 @@ export const MedicalknowledgeList =
 
 export const ManagementsolutionsList = [
        {
-              id: 1, Title: 'عوارض چشمی', photo: require('./../Images/Eye.png'), Description: ` 
+              id: 1, Title: 'خود مدیریتی عوارض چشمی', photo: require('./../Images/Eye.png'), Description: ` 
 		<p dir="RTL">
     ·          برای کاهش خطر  یا کند کردن پیشرفت عوارض چشمی، قند خون خود را
     بهینه کنترل کنید. انجمن دیابت آمریکا  (ADA) سطوح قند خون  هدف زیر را برای
     اکثر افراد مبتلا به دیابت توصیه می‌کند:
 </p>
-<p dir="RTL">
-    ·          بین 80 تا 130  میلی‌گرم در دسی‌لیتر (4.4 تا 7.2 میلی‌مول در لیتر)
-    قبل از غذا
-</p>
-<p dir="RTL">
-    ·          کمتر از 180میلی‌گرم  در دسی‌لیتر (10 میلی‌مول در لیتر) دو ساعت
-    بعد از غذا
-</p>
-<p dir="RTL">
-    ·          به طور کلی A1c 7.0٪ یا کمتر  را برای اکثر افراد مبتلا به دیابت
-    توصیه می‌کند.
-</p>
+
+<img
+max-width="350"
+max-height="450"
+
+src="https://s6.uupload.ir/files/d_fgh.png"
+    />
+
+
+
+
 <p dir="RTL">
     ·          فشار خون را کنترل  کنید. فشار خون زیر 140/90 میلی‌متر جیوه توصیه
     می‌شود.
@@ -344,7 +347,7 @@ export const ManagementsolutionsList = [
 <p dir="RTL">
     ·          آزمایش چربی باید  حداقل سالیانه در بیماران دیابتی انجام شود.
     اهداف چربی برای بزرگسالان مبتلا به دیابت  باید LDL &lt; 100،  HDL &gt; 50 و
-    تری‌گلیسیرید ناشتا &gt;150 میلی‌گرم بر دسی‌لیتر باشد.
+    تری‌گلیسیرید ناشتا &lt;150 میلی‌گرم بر دسی‌لیتر باشد.
 </p>
 <p dir="RTL">
     ·          مصرف میوه‌ها،  سبزیجات، غلات کامل، لبنیات کم چرب یا بدون چربی و
@@ -361,7 +364,7 @@ export const ManagementsolutionsList = [
     ویتامین‌ها و مواد معدنی کمک کرده و سلامت قلب را ارتقا  می‌دهند).
 </p>
 <p dir="RTL">
-    ·          اگر اضافه وزن  دارید وزن کم کنید - باید BMI بین 24.9- 18.5 را هدف
+    ·          اگر اضافه وزن  دارید وزن کم کنید - باید BMI بین  18.5 - 24.9  را هدف
     قرار دهید.
 </p>
 <p dir="RTL">
@@ -371,7 +374,7 @@ export const ManagementsolutionsList = [
               `
        },
        {
-              id: 2, Title: 'عوارض کلیوی', photo:  require('./../Images/Kidney.png'), Description: `	
+              id: 2, Title: ' خود مدیریتی عوارض کلیوی', photo:  require('./../Images/Kidney.png'), Description: `	
               <p dir="RTL">
     ·          سطح قند خون خود  را کنترل کنید تا مطمئن شوید که در محدوده هدف خود
     قرار گرفته‌اید. برای مثال، ممکن  است لازم باشد آن را یک بار در روز و قبل یا
@@ -425,12 +428,12 @@ export const ManagementsolutionsList = [
     مجاز است).
 </p>
 <p dir="RTL">
-    دارو مطابق با دستورالعمل‌های پزشکان و دستورالعمل‌های  بالینی مصرف شود. <br/>
+·      دارو مطابق با دستورالعمل‌های پزشکان و دستورالعمل‌های  بالینی مصرف شود. <br/>
 </p>
               `
        },
        {
-              id: 3, Title: 'عوارض عصبی', photo: require('./../Images/noron.jpg'), Description: `
+              id: 3, Title: 'خود مدیریتی عوارض عصبی', photo: require('./../Images/noron.jpg'), Description: `
               <p dir="RTL">
     ·          یکی از مهم‌ترین  روش‌های پیشگیری از نوروپاتی دیابتی، کنترل بیماری
     دیابت با مدیریت و کنترل میزان قند  خون، فشار خون و میزان کلسترول و چربی خون
@@ -438,35 +441,35 @@ export const ManagementsolutionsList = [
     شود.
 </p>
 <p dir="RTL">
-    ·          انجام فعالیت‌های  جسمی و ورزشی به ‌صورت منظم
+    ·          انجام فعالیت‌های  جسمی و ورزشی به ‌صورت منظم انجام شود.
 </p>
 
     <p dir="RTL">
-    ·    فیزیوتراپی
+    ·    جلسات فیزیوتراپی می تواند کمک کننده باشد.
     </p>
 
 <p dir="RTL">
-    ·          رعایت رژیم غذایی  دیابتی و انتخاب سبک زندگی سالم
+    ·           رژیم غذایی  دیابتی را رعایت و  سبک زندگی سالم را انتخاب کنید.
 </p>
 
     <p dir="RTL">
-    ·   ترک سیگار
+    ·   سیگار را ترک کنید.
     </p>
 
 <p dir="RTL">
-    ·          کاهش مصرف نوشیدنی‌های  الکلی
+    ·           مصرف نوشیدنی‌های  الکلی را کاهش دهید.
 </p>
 <p dir="RTL">
-    ·          مصرف منظم و سر  وقت داروهای تجویزی پزشک
+    ·            داروهای تجویزی پزشک را منظم و سر  وقت مصرف کنید.
 </p>
 <p dir="RTL">
-    ·          کنترل و مدیریت  استرس
+    ·         استرس را کنترل و مدیریت کنید.
 </p>
 <p dir="RTL">
-    ·          محافظت از پوست  و پاها
+    ·           از پوست  و پاها خود محافظت کنید.
 </p>
 <p dir="RTL">
-    ·          استفاده از روغن‌های  گیاهی، ویتامین B12 و امگا ۳ برای کاهش درد
+    ·         از روغن های گیاهی،ویتامین B12 و امگا 3 برای کاهش درد استفاده کنید.
 </p>
 <p dir="RTL">
     ·          کرم کپسایسین  یا کرم فلفل که روی پوست مالیده می‌شود، می‌تواند
@@ -523,7 +526,7 @@ export const ManagementsolutionsList = [
               `
        },
        {
-              id: 4, Title: 'عوارض قلبی', photo: require('./../Images/Heart.jpg'), Description: `
+              id: 4, Title: ' خود مدیریتی عوارض قلبی', photo: require('./../Images/Heart.jpg'), Description: `
               <p dir="RTL">
     ·          فشار خون باید  در هر ویزیت معمول دیابت اندازه‌گیری شود. بیمارانی
     که فشار خون سیستولیک ≥130 میلی‌متر  جیوه یا فشار خون دیاستولیک ≥80 میلی‌متر
@@ -538,7 +541,7 @@ export const ManagementsolutionsList = [
 </p>
 <p dir="RTL">
     ·          وزن سالم را هدف  بگیرید. اگر اضافه وزن دارید، از دست دادن حتی
-    مقدار کمی وزن می‌تواند تری گلیسیرید  و قند خون شما را کاهش دهد.
+    مقدار کمی وزن می‌تواند تری‌گلیسیرید  و قند خون شما را کاهش دهد.
 </p>
 <p dir="RTL">
     ·          استرس را مدیریت  کنید. استرس می‌تواند فشار خون شما را افزایش دهد
@@ -567,7 +570,7 @@ export const ManagementsolutionsList = [
 </p>
 <p dir="RTL">
     ·          مدیریت لیپید با  هدف کاهش کلسترول LDL، افزایش کلسترول  HDL و کاهش
-    تری گلیسیرید، بیماری ماکرو  عروقی و مرگ و میر را در بیماران مبتلا به دیابت
+    تری‌گلیسیرید، بیماری ماکرو  عروقی و مرگ و میر را در بیماران مبتلا به دیابت
     نوع 2، به ویژه آنهایی که حوادث قلبی  عروقی قبلی داشته‌اند، کاهش می‌دهد.
 </p>
 <p dir="RTL">
@@ -590,7 +593,7 @@ export const ManagementsolutionsList = [
               `
        },
        {
-              id: 5, Title: 'عوارض زخم پای دیابتی', photo: require('./../Images/Foot.jpg'), Description: `
+              id: 5, Title: 'خود مدیریتی عوارض زخم پای دیابتی', photo: require('./../Images/Foots.jpg'), Description: `
               <p dir="RTL">
     ·          با نزدیک نگه داشتن  سطح قند خون خود تا حد نرمال، خطر ابتلا به
     تمام عوارض مرتبط با دیابت، از جمله مشکلات  پا را کاهش دهید. مدیریت دقیق سطح
@@ -635,10 +638,10 @@ export const ManagementsolutionsList = [
     لبه‌های تیز استفاده کنید تا از فرورفتن ناخن  در پوستتان جلوگیری کنید.
 </p>
 <p align="center" dir="RTL">
-    <img
-        width="366"
-        height="160"
-        src="file:///C:/Users/SHABAN~1.AND/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg"
+<img
+max-width="300"
+max-height="300"
+        src="https://s6.uupload.ir/files/1_a1uv.png"
     />
 </p>
 <p dir="RTL">
@@ -651,32 +654,30 @@ export const ManagementsolutionsList = [
     پا را در آینده کاهش دهد.
 </p>
 <p dir="RTL">
-    <img
-        width="301"
-        height="242"
-        src="file:///C:/Users/SHABAN~1.AND/AppData/Local/Temp/msohtmlclip1/01/clip_image004.png"
+<img
+max-width="300"
+max-height="300"
+        src="https://s6.uupload.ir/files/2_6v24.png"
     />
-    <img
-        width="291"
-        height="241"
-        src="file:///C:/Users/SHABAN~1.AND/AppData/Local/Temp/msohtmlclip1/01/clip_image006.png"
-    />
+   
 </p>
 <p dir="RTL">
     ·          کفش نباید خیلی  تنگ یا خیلی گشاد باشد. داخل کفش باید 1 تا 2 سانتی
     متر بلندتر از خود پا باشد. عرض  داخلی باید برابر با عرض پا و ارتفاع باید
     فضای کافی را برای انگشتان پا ایجاد کند.
 </p>
+
+<p align="center" dir="RTL">
+<img
+max-width="300"
+max-height="300"
+        src="https://s6.uupload.ir/files/3_jtwa.png"
+    />
+</p>
 <p dir="RTL">
     ·          برای خرید کفش  پایان روز مناسب تر است.
 </p>
-<p align="center" dir="RTL">
-    <img
-        width="524"
-        height="169"
-        src="file:///C:/Users/SHABAN~1.AND/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg"
-    />
-</p>
+
 <p dir="RTL">
     ·          از راه رفتن با  پای برهنه در داخل یا خارج از منزل و پوشیدن کفش
     بدون جوراب خودداری کنید.
@@ -799,32 +800,23 @@ export const LifeStyleList = [
               در  معرض نور خورشید و سطوح ویتامین D باید کنترل شود.
           </p>
           <p dir="RTL">
-              <img
-                  width="575"
-                  height="628"
-                  src="file:///C:/Users/SHABAN~1.AND/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png"
+          <img
+          max-width="300"
+          max-height="300"
+                  src="https://s6.uupload.ir/files/food_anhg.png"
               />
           </p>
           <p align="center" dir="RTL">
               <strong>
-                  <img
-                      width="602"
-                      height="298"
-                      src="file:///C:/Users/SHABAN~1.AND/AppData/Local/Temp/msohtmlclip1/01/clip_image004.png"
+              <img
+              max-width="300"
+              max-height="300"
+                      src="https://s6.uupload.ir/files/4_lx2.png"
                   />
               </strong>
               <strong></strong>
           </p>
-          <p dir="RTL">
-              <strong>
-                  <img
-                      width="602"
-                      height="353"
-                      src="file:///C:/Users/SHABAN~1.AND/AppData/Local/Temp/msohtmlclip1/01/clip_image006.png"
-                  />
-              </strong>
-              <strong></strong>
-          </p>
+        
           <br/>
               `
        },
@@ -892,21 +884,34 @@ export const LifeStyleList = [
     ·          کارهایی مانند  کار در باغ، نظافت خانه یا شستن ماشین انجام دهید.
 </p>
 <p dir="RTL">
-    ·          در انتهای پارکینگ  مرکز خرید پارک کنید و تا فروشگاه پیاده روی
+    ·          وسایل نقلیه خود را در انتهای پارکینگ  مرکز خرید پارک کنید و تا فروشگاه پیاده روی
     کنید.
 </p>
 <p dir="RTL">
     ·          به جای آسانسور  از پله بروید.
 </p>
 <p dir="RTL">
-    ·          گردش‌های خانوادگی  خود مانند دوچرخه سواری خانوادگی یا پیاده روی
-    در پارک. انجام دهید.
+              گردش‌های خانوادگی  خود مانند دوچرخه سواری خانوادگی یا پیاده روی
+    در پارک، انجام دهید.
 </p>
 <p dir="RTL">
     ·          اگر به مدت طولانی  نشسته اید، هر نیم ساعت 3 دقیقه یا بیشتر
     فعالیت‌های سبک انجام دهید.  این حرکات می‌تواند شامل کشش پا، کشیدن بازو به
     بالای سر، پیچش تنه و راه رفتن در محل باشد.
 </p>
+
+
+
+<p dir="RTL">
+<img
+max-width="300"
+max-height="300"
+        src="https://s6.uupload.ir/files/seatbelt_3r3e.jpg"
+    />
+</p>
+
+
+
 <p dir="RTL">
     <strong></strong>
 </p>
@@ -996,6 +1001,19 @@ export const LifeStyleList = [
     روانشان در حال بهبود یافتن  است، در طول روز انرژی بیشتری دارند و همیشه
     بانشاط هستند.
 </p>
+
+
+
+<p dir="RTL">
+<img
+max-width="300"
+max-height="300"
+        src="https://s6.uupload.ir/files/taeichie_94bw.jpg"
+    />
+</p>
+
+
+
     <p dir="RTL">
     ·   <strong>رقص</strong> <strong></strong>
     </p>

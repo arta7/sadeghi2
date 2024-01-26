@@ -3,7 +3,7 @@ import React, { useRef, useState, useEffect } from "react";
 import {
   StyleSheet, View,
   Text, TouchableOpacity, Alert, ScrollView
-  , ActivityIndicator, BackHandler, KeyboardAvoidingView
+  , ActivityIndicator, BackHandler, Image
 } from "react-native";
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import Textinputs from '../Components/Textinputs'
@@ -222,14 +222,16 @@ export default Profiles = (props) => {
 
                 </View> */}
         </View>
-        <ScrollView>
+       
           <View style={{ width: wp('100%'), height: hp('30%') }}>
-            <View style={{ justifyContent: 'center', alignSelf: 'center', alignItems: 'center', marginTop: '15%' }}>
+            <View style={{ justifyContent: 'center', alignSelf: 'center', alignItems: 'center', marginTop: '10%' }}>
               <CircleLogo
                 onPress={() => { }}
-                circleDiameter={wp('15%')}
-              // children={<Text
-              //    style={{color:'white',fontSize:wp('3%')}}>Logo</Text>}
+                circleDiameter={wp('22%')}
+                children={ <Image style={{ width: 50, height: 50 }} source={require('./../Images/resume.png')} 
+                resizeMode="stretch"
+              />
+                }
               />
             </View>
             <View style={{
@@ -250,11 +252,11 @@ export default Profiles = (props) => {
 
 
 
-
+          <ScrollView>
           <View style={{
-            width: wp('100%'), height: hp('70%')
+            width: wp('100%'), height: 'auto'
             , backgroundColor: 'white', borderTopLeftRadius: 50, borderTopRightRadius: 50
-            , borderTopWidth: 1, borderTopColor: 'transparent'
+            , borderTopWidth: 1, borderTopColor: 'transparent',paddingTop:20,marginTop:20
           }}>
 
             <View style={{ width: wp('100%'), height: '100%' }}>

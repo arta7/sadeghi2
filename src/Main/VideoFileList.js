@@ -124,14 +124,14 @@ export default VideoFileList = (props) => {
                         ,borderBottomColor:'gray',flexDirection:'row-reverse',justifyContent:'center',alignSelf:'center',alignSelf:'center' }}>
 
                             <TouchableOpacity style={{ width: wp('70%'),marginRight:20, height: hp(10)
-                            ,justifyContent:'center',alignItems:'center',borderWidth:1,borderRadius:10,borderColor:'rgba(9,132,226,1)' }}
+                            ,justifyContent:'center',alignItems:'center',borderWidth:1,borderRadius:10,borderColor:'rgba(9,132,226,1)',backgroundColor:'rgba(9,132,226,0.1)' }}
                             disabled={true}
                             >
                                  <Text style={{ fontSize: wp(4), color: 'black', textAlign: 'center', 
                                  paddingHorizontal: 20,paddingBottom:5 }}>{item.Title}</Text>
                             </TouchableOpacity>
                                 <TouchableOpacity style={{elevation:5,marginRight:20,
-                                justifyContent:'center',alignItems:'center',borderRadius:wp(3),width:wp(15),height:wp(15)}}
+                                justifyContent:'center',alignItems:'center',borderRadius:wp(3),width:wp(15),height:wp(15),backgroundColor:'rgba(9,132,226,0.1)'}}
                                 onPress={()=>{props.navigation.push('ShowVideo', { item: item })}}
                                 >  
                                 <Icon name='caretright' size={25} color='gray' type='antdesign' style={{justifyContent:'center',alignSelf:'center'}} />

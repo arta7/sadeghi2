@@ -24,6 +24,35 @@ const realm = new Realm({
           Doz:'string'
         },
       },
+      {
+        name: 'BloodTestList',
+        properties: {
+          Id: { type: 'int', default: 0 },
+          Amount: 'string',
+          Time: 'string',
+          Date:'string',
+          ItemIndex:'string'
+        },
+      },
+
+      {
+        name: 'DoctorsListControl',
+        properties: {
+          Id: { type: 'int', default: 0 }
+        },
+      },
+      {
+        name: 'DrugsListControl',
+        properties: {
+          Id: { type: 'int', default: 0 }
+        },
+      },
+      {
+        name: 'BloodTestListControl',
+        properties: {
+          Id: { type: 'int', default: 0 }
+        },
+      },
 
     ],
   })

@@ -110,7 +110,7 @@ export default BMI = (props) => {
 
                 </View> */}
           </View>
-          <View style={{ width: wp('100%'), height: hp('35%') }}>
+          {/* <View style={{ width: wp('100%'), height: hp('35%') }}> */}
             <View style={{ justifyContent: 'center', alignSelf: 'center', alignItems: 'center', marginTop: '15%' }}>
               <CircleLogo
                 onPress={() => { }}
@@ -125,7 +125,7 @@ export default BMI = (props) => {
 
 
             <View style={{
-              justifyContent: 'center', alignItems: 'center', marginTop: '10%', paddingHorizontal: wp(4),
+              justifyContent: 'center', alignItems: 'center', marginTop: 30, paddingHorizontal: wp(4),marginBottom:30
             }}>
               <Text style={{
                 color: 'white',
@@ -138,11 +138,11 @@ export default BMI = (props) => {
 
 
 
-          </View>
+          {/* </View> */}
 
           <View style={{
             justifyContent: 'center', alignItems: 'center', width: wp('80%'),
-            marginHorizontal: wp(10), borderRadius: 10, borderWidth: 0.5, elevation: 2, marginTop: 10, backgroundColor: '#deeafc', marginBottom: 10
+            marginHorizontal: wp(10), borderRadius: 10, borderWidth: 0.5, elevation: 2, marginTop: 10, backgroundColor: '#deeafc', marginBottom: 20
 
           }}>
             <Text style={{

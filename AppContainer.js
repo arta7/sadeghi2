@@ -23,6 +23,7 @@ import Managementsolutions from './src/ListItems/Managementsolutions'
 import LifeStyle from './src/ListItems/LifeStyle'
  import Profiles from './src/Profile/Profiles'
 import DoctorTodo from './src/ToDo/DoctorTodo'
+import BloodTest from './src/ToDo/BloodTest'
 import DrugsTodo from './src/ToDo/DrugsTodo'
 import ReminderSelector from './src/Main/ReminderSelector'
 import BMI from './src/ToDo/BMI'
@@ -94,6 +95,9 @@ var AppContainer = createStackNavigator({
         },
         VideoFile:{
           screen:VideoFile
+        },
+        BloodTest:{
+          screen:BloodTest
         }
 
 

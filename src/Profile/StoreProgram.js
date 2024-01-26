@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect, useContext } from "react";
 import {
     StyleSheet, View,
     TouchableOpacity, Alert, ScrollView
-    , ActivityIndicator, BackHandler, FlatList, Image, Linking, Text 
+    , ActivityIndicator, BackHandler, FlatList, Image, useWindowDimensions, Text
 } from "react-native";
 import axios from 'axios';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
@@ -28,9 +28,8 @@ import RenderHtml from 'react-native-render-html';
 
 
 
-
 export default StoreProgram = (props) => {
-    
+
     const [showIcon, setshowIcon] = useState(false)
     const drawerRef = useRef();
     // const value = useContext(Redux);
@@ -44,31 +43,19 @@ export default StoreProgram = (props) => {
     let openDrawer = () => {
         drawerRef?.current._root.open()
     }
-    
-   
-    const imagesList =
-    {
-        Foot: require('./../Images/Foot.png'),
-        acquaintance: require('./../Images/acquaintance.png')
-    }
 
-    let checkItemIcon = (t) => {
-        switch (t) {
-            case 0:
-                return <Icon name='link' color='black' type='font-awesome-5' size={20} />
+    const { width } = useWindowDimensions();
 
-            case 1:
-                return <Icon name='globe-americas' color='black' type='font-awesome-5' size={20} />
 
-            case 2:
-                return <Icon name='card-travel' color='black' size={20} />
-
-            case 3:
-                return <Icon name='credit-card' color='black' type='font-awesome-5' size={20} />
-
+    let computeEmbeddedMaxWidth = (contentWidth, tagName) => {
+        if (tagName === 'img') {
+            return Math.min(contentWidth, 300);
         }
-
+        return contentWidth;
     }
+
+
+
 
     return (
         <View style={styles.root}>
@@ -125,24 +112,18 @@ export default StoreProgram = (props) => {
 
 
                         <RenderHtml
-                        style={{flexDirection:'row'}}
-                            renderers={{
-                                img: (attribs,ss) => {
-                                   
-                                    const imagePath = attribs.source;
-                                    console.log('imagePath : ',ss)
-                                    return (
-                                        <Image
-                                            key={attribs.source}
-                                            style={{ width: '80%', height: hp(25), marginHorizontal: '10%' }}
-                                            source={imagesList[imagePath]}
-                                        />
-                                    );
-                                },
-                            }}
-                            source={{ html: '<body style="font-size: 1.2rem;padding:5px;text-align: justify" >' + data.Description + '</body> ' }}
+                            computeEmbeddedMaxWidth={computeEmbeddedMaxWidth}
+                            contentWidth={width}
 
+                            source={{
+                                html: `
+                             <html lang="ar"  style="font-size: 1.25rem;text-align: right" dir="rtl">
+                             <body style="font-size: 1.25rem;text-align: right">  
+                            ` + data.Description + `</body></html> `
+                            }}
                         />
+                        
+
 
                     </View>
 
@@ -167,7 +148,7 @@ const styles = StyleSheet.create({
     rootProgram:
     {
         width: wp('90%'), marginHorizontal: wp('5%'), borderWidth: 0.5
-        , borderColor: 'grey', borderRadius: 10, marginBottom: 10
+        , borderColor: 'grey', borderRadius: 10, marginBottom: 10, textAlign: 'right', padding: 4
     },
     BottomView:
     {

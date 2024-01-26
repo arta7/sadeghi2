@@ -141,7 +141,7 @@ export default Login = (props) =>{
 
     return (
      <View style={styles.root}>
-       <ScrollView>
+     
       
        {/* <CenterModal showModal={ShowLan} 
        closeModal={()=>setShowLan(false)}  dataSource={Language}
@@ -172,8 +172,8 @@ export default Login = (props) =>{
           </View> */}
 
 
-          <View style={{width:wp('100%'),height:hp('70%'),backgroundColor:'rgba(9,132,226,1)'
-          ,borderBottomLeftRadius:50,borderBottomRightRadius:50
+          <View style={{width:wp('100%'),height:hp('100%'),backgroundColor:'rgba(9,132,226,1)'
+          
       ,borderBottomWidth:1,borderBottomColor:'transparent'
           }}>
             
@@ -182,9 +182,7 @@ export default Login = (props) =>{
 
 
    
-          <View style={{height:hp('100%'),width:'100%'}}>
-          
-        
+         
 
          <View style={{width:wp('100%'),justifyContent:'center'
      ,alignItems:'center',height:hp('25%')}}>
@@ -192,10 +190,25 @@ export default Login = (props) =>{
           <CircleLogo
   onPress = {() => {}}
   circleDiameter = {wp('35%')}
-  // children={<Text style={{color:'white',fontSize:wp('7%')}}>Logo</Text>}
+  children={ <Image style={{ width: 80, height: 80 }} source={require('./../Images/Blood.jpg')} 
+  resizeMode="stretch"
 />
+        }
+        />
           
      </View>
+     <View style={[styles.TopTextView, {
+            marginBottom: 10
+            , marginHorizontal: wp(10)
+          }]}>
+            <Text style={[styles.TopText, {
+              fontSize: wp('3.5'),textAlign:'center',color:'white'
+            }]}>
+            به برنامه خود مدیریتی عوارض دیابت نوع ۲ خوش آمدید.
+            </Text>
+          </View>
+
+
       
 
      <Textinputs
@@ -239,16 +252,6 @@ export default Login = (props) =>{
      <View style={{flexDirection:'row-reverse',
      width:wp('70%'),marginHorizontal:wp('15%')
      ,marginTop:20,justifyContent:'space-between',alignItems:'center'}}>
-     {/* <TouchableOpacity style={{flexDirection:'row-reverse',
-     justifyContent:'center',alignItems:'center'}}>
-     <CheckBox
-    disabled={false}
-    value={toggleCheckBox}
-    onValueChange={(newValue) => setToggleCheckBox(!toggleCheckBox)}
-    tintColors={{true:'white',false:'white'}}
-      />
-     <Text style={{fontSize:wp('3.5%'),color:'white'}}>ذخیره نام کاربری</Text>
-     </TouchableOpacity> */}
      
      <TouchableOpacity style={{
      justifyContent:'center',alignItems:'center'
@@ -278,7 +281,7 @@ style={{bottom:-30,width:wp('40%'),marginHorizontal:wp('30%'),height:50,marginTo
       justifyContent:'center',alignItems:'center',
       borderWidth:1,borderColor:'rgba(9,132,226,1)'
       // ,position:'absolute'
-      ,bottom:-30
+      
 
       }}
       titleStyle={{color:'rgba(9,132,226,1)',fontSize:wp('3.5%'),textAlign:'center'}}
@@ -287,40 +290,29 @@ style={{bottom:-30,width:wp('40%'),marginHorizontal:wp('30%'),height:50,marginTo
       />
     }
 
-
-
-           </View>
-      
-     
-{/* <TouchableOpacity style={{
-          flexDirection:'row',alignItems:'center'
-          ,justifyContent:'center',
-          position:'absolute',top:'5%',left:'5%'
-          }}
-          onPress={()=>{Alert.alert('test')}}
-          >
-          </TouchableOpacity> */}
-
-
-         </View>
-         
-         <View style={{
-     width:wp('70%'),marginHorizontal:wp('15%'),marginTop:'10%'
+<View style={{
+     width:wp('70%'),marginHorizontal:wp('15%'),marginTop:40
      ,justifyContent:'center',alignItems:'center'}}>
 
 <Text style={{fontSize:wp('3.5%')
-,color:'rgba(9,132,226,1)'}}>حساب کاربری ندارید؟</Text>
+,color:'white'}}>حساب کاربری ندارید؟</Text>
 <TouchableOpacity 
 onPress={()=>{props.navigation.navigate('Register')}}
 >
 <Text style={{fontSize:wp('4.5%')
-,color:'grey'}}
+,color:'red'}}
 >ثبت نام</Text>
 </TouchableOpacity>
      </View>
 
 
-</ScrollView>
+         
+      
+
+
+         </View>
+         
+     
      </View>
       
        

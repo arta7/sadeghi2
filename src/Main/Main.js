@@ -78,6 +78,8 @@ export default Main = (props) => {
                     </TouchableOpacity> */}
                 </View>
 
+
+
                 <View style={{ width: wp('70%'), justifyContent: 'center', alignItems: 'center' }}>
                     <Text style={{
                        fontSize: wp('3.5%'),

@@ -14,13 +14,13 @@ export default CenterModals =(props)=>{
          <Modal isVisible={props.showModal} 
          style={[{justifyContent: 'center',
          width:wp('90%')
-         ,marginHorizontal:wp('5%'),height:500
+         ,marginHorizontal:wp('5%'),height:600
                         },props.ModalStyle]}
                         onBackdropPress={props.closeModal}>
                          <View style={[{
                          borderRadius: 10,
                          borderColor: 'white',
-                         height:500,width:'100%',padding:10,backgroundColor:'white'
+                         height:600,width:'100%',padding:10,backgroundColor:'white'
                          },props.ViewStyle]}>
 
                             {

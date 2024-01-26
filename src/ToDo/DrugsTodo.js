@@ -81,9 +81,30 @@ export default DrugsTodo = (props) => {
                 }
 
                 setshowDateModal(false)
-                var ID = realm.objects('DrugsList').length + 1;
+                
+                var ID ;
+                    // if(realm.objects('DrugsList').length ==  0)
+                    {
+                        ID =  realm.objects('DrugsListControl').length + 1;
+                    }
+                    // else
+                    // {
+                    //     var pr = realm.objects('DrugsList');
+                    //         ID = pr[pr.length-1].Id +1
+                    // }
+
+
                 console.log('ID', ID.toString())
-                Notifications.schduleRepeatNotification(new Date(Time), ID.toString(), ' دارو ' + Name, ' دوز دارو' + Dozes);
+                Notifications.schduleRepeatNotification(new Date(Time), ID.toString(), ' دارو ' + Name, ' دوز دارو ' + Dozes);
+
+                realm.write(() => {
+
+                    realm.create('DrugsListControl', {
+                        Id: ID
+                    });
+                })
+
+
                 realm.write(() => {
 
                     realm.create('DrugsList', {
@@ -100,12 +121,11 @@ export default DrugsTodo = (props) => {
             }
             else {
                 let pr = realm.objects('DrugsList').filtered('Id = $0', selectedId)
-
+                var ID =  selectedId;
+                console.log('ID', ID.toString())
                 Notifications.cancelLocalNotification(selectedId);
 
-                realm.write(() => {
-                    realm.delete(pr)
-                })
+               
 
                 var Time;
                 if (new Date(Date.now()) < selectedTime)
@@ -121,18 +141,17 @@ export default DrugsTodo = (props) => {
                 //var Time = new Date(Date.now()).toLocaleDateString('en-US') + ' ' + selectedTime.toLocaleTimeString('en-US')
 
                 setshowDateModal(false)
-                var ID = realm.objects('DrugsList').length + 1;
-                console.log('ID', ID.toString())
+              
                 Notifications.schduleRepeatNotification(new Date(Time), ID.toString(), ' دارو ' + Name, ' دوز دارو ' + Dozes);
                 realm.write(() => {
 
-                    realm.create('DrugsList', {
-                        Id: ID,
-                        Name: Name,
-                        Date: new Date().toString(),
-                        Time: selectedTime.toString(),
-                        Doz: Dozes
-                    });
+                    // realm.create('DrugsList', {
+                     
+                    pr[0].Name= Name;
+                    pr[0].Date= new Date().toString();
+                    pr[0].Time= selectedTime.toString();
+                    pr[0].Doz= Dozes
+                    // });
                 })
 
 
@@ -150,8 +169,9 @@ export default DrugsTodo = (props) => {
     }
 
     let SelectDrugsList = () => {
-        let pr = realm.objects('DrugsList')
+        let pr = realm.objects('DrugsList').sorted('Time', false)
         if (pr.length > 0) {
+             console.log('pr',pr[pr.length-1].Id)
             setDrugsList(pr)
         }
     }
@@ -300,10 +320,20 @@ export default DrugsTodo = (props) => {
                         setEditClick(0)
                         setShowModal(false)
                     }}
-                    ViewStyle={{ height: 350, width: '100%' }}
+                    ViewStyle={{ height: 450, width: '100%' }}
                     Children={
                         <View style={{ width: '90%', marginHorizontal: '5%' }}>
+                        <View style={{
+                                justifyContent: 'center', alignItems: 'center', width: ('80%'),
+                                marginHorizontal: wp(10), borderRadius: 10, borderWidth: 0.5, elevation: 2, marginTop: 10, backgroundColor: '#deeafc', marginBottom: 10
 
+                            }}>
+                                <Text style={{
+                                textAlign: "center",
+                                color: "red",
+                                fontSize: wp(3), padding: 10
+                                }}>لطفا ساعت گوشی خود را برای اعلان هشدار دقیق از قبل تنظیم کنید</Text>
+                            </View> 
                             <TextInputs
                                 changeText={(value) => { setName(value) }}
                                 values={Name}

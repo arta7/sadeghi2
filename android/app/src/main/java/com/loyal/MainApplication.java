@@ -49,8 +49,8 @@ public class MainApplication extends Application implements ReactApplication {
     SoLoader.init(this, /* native exopackage */ false);
     initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
     I18nUtil sharedI18nUtilInstance = I18nUtil.getInstance();
-    sharedI18nUtilInstance.allowRTL(getApplicationContext(), true);
-    
+    sharedI18nUtilInstance.allowRTL(this, false);
+    sharedI18nUtilInstance.forceRTL(this, false);
   }
 
   /**

@@ -24,7 +24,9 @@ import {
 
 const data = [{ id: '1', Name: 'دارو', Photo: require('./../Images/medicine.png'), Page: 'DrugsTodo' },
 { id: '2', Name: 'پزشک', Photo: require('./../Images/medical-checkup.png'), Page: 'DoctorTodo' },
-{ id: '3', Name: 'محاسبه BMI', Photo: require('./../Images/body-mass.png'), Page: 'BMI' }]
+{ id: '3', Name: 'محاسبه BMI', Photo: require('./../Images/body-mass.png'), Page: 'BMI' },
+{ id: '4', Name: 'قند خون', Photo: require('./../Images/Blood.jpg'), Page: 'BloodTest' }
+]
 
 
 
@@ -78,7 +80,7 @@ export default ReminderSelector = (props) => {
                             color: 'white',
                             justifyContent: 'center',
                             textAlign: 'right'
-                        }}></Text>
+                        }}>مدیریت یادآورها</Text>
                     </View>
 
                     <View style={{ width: wp('15%'), alignItems: 'center', justifyContent: 'center' }}>
@@ -91,7 +93,7 @@ export default ReminderSelector = (props) => {
                     </View> */}
                 </View>
                 <View style={{ width: wp('90%'), height: hp(25), marginHorizontal: wp(5), overflow: 'hidden', borderRadius: 10, elevation: 1, marginTop: 20 }}>
-                    <Image source={require('./../Images/MainMenu.png')}
+                    <Image source={require('./../Images/RemindSelector1.jpg')}
                         style={{ width: '100%', height: '100%', overflow: 'hidden' }}
                         resizeMode='stretch' />
 
